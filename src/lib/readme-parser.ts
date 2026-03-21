@@ -13,16 +13,18 @@ type PersonWithWebsite = {
 
 export function parseReadme() {
   // Transform person data
-  const persons = personData.persons.map((p: any): PersonWithWebsite => ({
-    id: p.id,
-    name: p.name,
-    role: p.title, // title -> role for backward compatibility
-    icon: p.icon,
-    social: {
-      twitter: p.twitter,
-    },
-    website: p.website,
-  }));
+  const persons = personData.persons.map(
+    (p: any): PersonWithWebsite => ({
+      id: p.id,
+      name: p.name,
+      role: p.title, // title -> role for backward compatibility
+      icon: p.icon,
+      social: {
+        twitter: p.twitter,
+      },
+      website: p.website,
+    }),
+  );
 
   return {
     personData: {

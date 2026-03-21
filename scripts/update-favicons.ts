@@ -19,7 +19,9 @@ async function updatePersonFavicons() {
   for (const person of data.persons) {
     if (person.website) {
       person.icon = getFaviconUrl(person.website);
-      console.log(`✓ Person: ${person.name} → ${person.icon.substring(0, 60)}...`);
+      console.log(
+        `✓ Person: ${person.name} → ${person.icon.substring(0, 60)}...`,
+      );
     }
   }
 
@@ -35,12 +37,16 @@ async function updateResourceFavicons() {
   for (const resource of data.resources) {
     if (resource.href && resource.href !== "#") {
       resource.icon = getFaviconUrl(resource.href);
-      console.log(`✓ Resource: ${resource.title} → ${resource.icon.substring(0, 60)}...`);
+      console.log(
+        `✓ Resource: ${resource.title} → ${resource.icon.substring(0, 60)}...`,
+      );
     }
   }
 
   writeFileSync(resourcePath, JSON.stringify(data, null, 2));
-  console.log("✅ Updated src/data/resources.json favicons (categories kept as react-icons)\n");
+  console.log(
+    "✅ Updated src/data/resources.json favicons (categories kept as react-icons)\n",
+  );
 }
 
 async function main() {

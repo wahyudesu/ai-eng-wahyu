@@ -24,7 +24,6 @@ export default function CoursesPage() {
         <Navigation />
 
         <main>
-
           {/* ASCII Art */}
           <AsciiLarge />
 

@@ -35,9 +35,7 @@ const organizationLd = {
   description:
     "Curated resources for AI engineers, including job opportunities, courses, tools, and expert recommendations.",
   logo: "https://aieng.wahyuikbal.com/favicon.svg",
-  sameAs: [
-    "https://twitter.com/wahyudesu",
-  ],
+  sameAs: ["https://twitter.com/wahyudesu"],
   founder: {
     "@type": "Person",
     name: "Wahyu Iqbal",
@@ -109,7 +107,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
         <link rel="icon" href="/icon" sizes="512x512" type="image/png"></link>
-        <link rel="apple-touch-icon" href="/apple-icon" sizes="180x180" type="image/png"></link>
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon"
+          sizes="180x180"
+          type="image/png"
+        ></link>
         <link rel="manifest" href="/manifest.json"></link>
         <meta name="theme-color" content="#667eea"></meta>
         <script
