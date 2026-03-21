@@ -8,14 +8,18 @@ import { useState } from "react";
 export function ResourcesFilter({ resources, filterOptions }) {
   const [selectedCategories, setSelectedCategories] = useState([]);
 
-  const filtered = selectedCategories.length === 0
-    ? resources
-    : resources.filter((r) => selectedCategories.includes(r.category));
+  const filtered =
+    selectedCategories.length === 0
+      ? resources
+      : resources.filter((r) => selectedCategories.includes(r.category));
 
   return (
     <>
       <div className="mb-6">
-        <SelectorChips options={filterOptions} onChange={setSelectedCategories} />
+        <SelectorChips
+          options={filterOptions}
+          onChange={setSelectedCategories}
+        />
       </div>
       <InteractiveList items={filtered} />
     </>

@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-import { useEffect, useState } from "react"
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
     return (
       <button className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-neutral-800/50 transition-colors">
         <Sun size={18} className="text-neutral-400" />
       </button>
-    )
+    );
   }
 
   return (
@@ -32,5 +32,5 @@ export function ThemeToggle() {
         <Moon size={18} className="text-neutral-600" />
       )}
     </button>
-  )
+  );
 }

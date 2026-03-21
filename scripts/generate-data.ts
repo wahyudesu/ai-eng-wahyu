@@ -2,19 +2,36 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const personInfo = {
-  AndrewYNg: { name: "Andrew Ng", role: "AI/ML Expert & Founder at DeepLearning.AI" },
-  karpathy: { name: "Andrej Karpathy", role: "AI Researcher & Founder of Eureka Labs" },
-  jerryjliu: { name: "Jerry Liu", role: "Co-founder of LangChain & AI Engineer" },
+  AndrewYNg: {
+    name: "Andrew Ng",
+    role: "AI/ML Expert & Founder at DeepLearning.AI",
+  },
+  karpathy: {
+    name: "Andrej Karpathy",
+    role: "AI Researcher & Founder of Eureka Labs",
+  },
+  jerryjliu: {
+    name: "Jerry Liu",
+    role: "Co-founder of LangChain & AI Engineer",
+  },
   harrisonchase: { name: "Harrison Chase", role: "Founder & CEO of LangChain" },
-  shyamal_anadkat: { name: "Shyamal Anadkat", role: "AI Engineer & LlamaIndex Contributor" },
-  "sadie.stlawrence": { name: "Sadie St. Lawrence", role: "AI & Data Science Educator" },
+  shyamal_anadkat: {
+    name: "Shyamal Anadkat",
+    role: "AI Engineer & LlamaIndex Contributor",
+  },
+  "sadie.stlawrence": {
+    name: "Sadie St. Lawrence",
+    role: "AI & Data Science Educator",
+  },
 };
 
 function parseReadmeFile() {
   const readme = readFileSync(join(process.cwd(), "README.md"), "utf-8");
 
   // Parse AI Engineers section - from ### headers to ---
-  const personsMatch = readme.match(/## 👥 AI Engineers to Follow\n([\s\S]+?)\n---/);
+  const personsMatch = readme.match(
+    /## 👥 AI Engineers to Follow\n([\s\S]+?)\n---/,
+  );
   const personsData: any[] = [];
 
   if (personsMatch) {
@@ -48,9 +65,10 @@ function parseReadmeFile() {
       else if (url.includes("linkedin")) platform = "linkedin";
       else if (url.includes("github")) platform = "github";
 
-      const id = Object.keys(personInfo).find(
-        (key) => personInfo[key as keyof typeof personInfo].name === name
-      ) || name.toLowerCase().replace(/\s+/g, "");
+      const id =
+        Object.keys(personInfo).find(
+          (key) => personInfo[key as keyof typeof personInfo].name === name,
+        ) || name.toLowerCase().replace(/\s+/g, "");
 
       personsData.push({ id, name, role, icon, social: { [platform]: url } });
     }
@@ -76,7 +94,9 @@ function parseReadmeFile() {
     const lines = resourcesSection.split("\n");
     for (const line of lines) {
       // Check for category header
-      const matchedHeader = categoryHeaders.find((h) => line.trim() === "### " + h);
+      const matchedHeader = categoryHeaders.find(
+        (h) => line.trim() === "### " + h,
+      );
       if (matchedHeader) {
         currentCategory = categoryMap[matchedHeader];
         continue;
@@ -139,7 +159,7 @@ function parseReadmeFile() {
 const data = parseReadmeFile();
 writeFileSync(
   join(process.cwd(), "src/data/generated.json"),
-  JSON.stringify(data, null, 2)
+  JSON.stringify(data, null, 2),
 );
 
 console.log("✅ Generated src/data/generated.json from README.md");

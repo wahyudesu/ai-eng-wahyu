@@ -22,4 +22,3 @@ declare module "*.json" {
   const value: ResourcesData;
   export default value;
 }
-

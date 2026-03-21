@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { Navigation } from "@/components/navigation";
+import { AsciiAi } from "@/components/ascii-ai";
 import { InteractiveList } from "@/components/ui/interactive-list";
 import { ResourcesFilter } from "@/components/resources-filter";
 import { parseReadme } from "@/lib/readme-parser";
@@ -40,17 +41,8 @@ export default function HomePage() {
       <div className="max-w-2xl mx-auto px-6 py-8">
         <Navigation />
 
-        <header className="py-12">
-          <div className="w-20 h-20 mb-12 rounded-full border border-primary/20 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primary/10 to-transparent flex items-center justify-center overflow-hidden">
-            <div
-              className="w-full h-full opacity-30"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle, currentColor 1px, transparent 1px)",
-                backgroundSize: "8px 8px",
-              }}
-            ></div>
-          </div>
+        <header className="py-4">
+          <AsciiAi/>
 
           <h1 className="text-2xl font-medium text-foreground mb-3">
             AI Engineering
