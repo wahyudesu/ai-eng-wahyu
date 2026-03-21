@@ -1,33 +1,35 @@
-// Static data parser for Vercel compatibility
-// Data is pre-generated during build time from README.md
-import generatedData from "@/data/generated.json";
+// Read directly from JSON files - now the source of truth
+import personData from "@/data/person.json";
+import resourcesData from "@/data/resources.json";
 
-const icons = { twitter: "𝕏", instagram: "📷", linkedin: "💼", github: "🔗" };
-
-const personInfo = {
-  AndrewYNg: {
-    name: "Andrew Ng",
-    role: "AI/ML Expert & Founder at DeepLearning.AI",
-  },
-  karpathy: {
-    name: "Andrej Karpathy",
-    role: "AI Researcher & Founder of Eureka Labs",
-  },
-  jerryjliu: {
-    name: "Jerry Liu",
-    role: "Co-founder of LangChain & AI Engineer",
-  },
-  harrisonchase: { name: "Harrison Chase", role: "Founder & CEO of LangChain" },
-  shyamal_anadkat: {
-    name: "Shyamal Anadkat",
-    role: "AI Engineer & LlamaIndex Contributor",
-  },
-  "sadie.stlawrence": {
-    name: "Sadie St. Lawrence",
-    role: "AI & Data Science Educator",
-  },
+type PersonWithWebsite = {
+  id: string;
+  name: string;
+  role: string;
+  icon: string;
+  social: { twitter: string };
+  website: string;
 };
 
 export function parseReadme() {
-  return generatedData;
+  // Transform person data
+  const persons = personData.persons.map((p: any): PersonWithWebsite => ({
+    id: p.id,
+    name: p.name,
+    role: p.title, // title -> role for backward compatibility
+    icon: p.icon,
+    social: {
+      twitter: p.twitter,
+    },
+    website: p.website,
+  }));
+
+  return {
+    personData: {
+      title: personData.title,
+      description: personData.description,
+      persons,
+    },
+    resourcesData: resourcesData, // Direct from resources.json
+  };
 }

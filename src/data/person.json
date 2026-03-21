@@ -5,56 +5,50 @@
     {
       "id": "andrew-ng",
       "name": "Andrew Ng",
-      "role": "AI/ML Expert & Founder at DeepLearning.AI",
-      "icon": "🧠",
-      "social": {
-        "twitter": "https://x.com/AndrewYNg"
-      }
+      "title": "AI/ML Expert & Founder at DeepLearning.AI",
+      "website": "https://www.deeplearning.ai",
+      "twitter": "https://x.com/AndrewYNg",
+      "icon": "https://www.google.com/s2/favicons?domain=www.deeplearning.ai&sz=128"
     },
     {
       "id": "andrej-karpathy",
       "name": "Andrej Karpathy",
-      "role": "AI Researcher & Founder of Eureka Labs",
-      "icon": "🤖",
-      "social": {
-        "twitter": "https://x.com/karpathy"
-      }
+      "title": "AI Researcher & Founder of Eureka Labs",
+      "website": "https://eureka.labs",
+      "twitter": "https://x.com/karpathy",
+      "icon": "https://www.google.com/s2/favicons?domain=eureka.labs&sz=128"
     },
     {
       "id": "jerry-liu",
       "name": "Jerry Liu",
-      "role": "Co-founder of LangChain & AI Engineer",
-      "icon": "🦜",
-      "social": {
-        "twitter": "https://x.com/jerryjliu"
-      }
+      "title": "Co-founder of LangChain & AI Engineer",
+      "website": "https://www.langchain.com",
+      "twitter": "https://x.com/jerryjliu",
+      "icon": "https://www.google.com/s2/favicons?domain=www.langchain.com&sz=128"
     },
     {
       "id": "sadie-stlawrence",
       "name": "Sadie St. Lawrence",
-      "role": "AI & Data Science Educator",
-      "icon": "👩‍🏫",
-      "social": {
-        "instagram": "https://www.instagram.com/sadie.stlawrence/"
-      }
+      "title": "AI & Data Science Educator",
+      "website": "https://www.sadiestlawrence.com",
+      "twitter": "https://x.com/SadieStLawrence",
+      "icon": "https://www.google.com/s2/favicons?domain=www.sadiestlawrence.com&sz=128"
     },
     {
       "id": "harrison-chase",
       "name": "Harrison Chase",
-      "role": "Founder & CEO of LangChain",
-      "icon": "⚡",
-      "social": {
-        "twitter": "https://x.com/harrisonchase"
-      }
+      "title": "Founder & CEO of LangChain",
+      "website": "https://www.langchain.com",
+      "twitter": "https://x.com/harrisonchase",
+      "icon": "https://www.google.com/s2/favicons?domain=www.langchain.com&sz=128"
     },
     {
       "id": "shyamal-anadkat",
       "name": "Shyamal Anadkat",
-      "role": "AI Engineer & LlamaIndex Contributor",
-      "icon": "🦙",
-      "social": {
-        "twitter": "https://x.com/shyamal_anadkat"
-      }
+      "title": "AI Engineer & LlamaIndex Contributor",
+      "website": "https://www.llamaindex.ai",
+      "twitter": "https://x.com/shyamal_anadkat",
+      "icon": "https://www.google.com/s2/favicons?domain=www.llamaindex.ai&sz=128"
     }
   ]
 }

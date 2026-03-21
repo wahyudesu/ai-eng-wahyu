@@ -1,8 +1,9 @@
 "use client";
 
+import { FaGithub } from "react-icons/fa6";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Github } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 
 const navItems = [
@@ -17,7 +18,7 @@ export function Navigation() {
 
   return (
     <nav className="flex justify-between items-center py-5">
-      <ul className="flex gap-7 text-sm text-muted-foreground">
+      <ul className="flex gap-4 text-sm text-muted-foreground">
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
@@ -38,10 +39,10 @@ export function Navigation() {
           href="https://github.com/wahyudesu/ai-eng-why"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-md hover:bg-muted transition-colors"
+          className="p-2 rounded-full hover:bg-muted transition-colors text-neutral-600 dark:text-neutral-400"
           aria-label="GitHub Repository"
         >
-          <Github size={18} />
+          <FaGithub size={18} />
         </a>
         <ThemeToggle />
       </div>

@@ -1,34 +1,12 @@
 "use client";
 
-import * as React from "react";
-import { useState } from "react";
 import { motion } from "motion/react";
-import {
-  FileText,
-  MessageCircle,
-  Sparkles,
-  Video,
-  Briefcase,
-  BookOpen,
-  Wrench,
-  Code,
-  type LucideIcon,
-} from "lucide-react";
-
-const iconMap: Record<string, LucideIcon> = {
-  FileText,
-  MessageCircle,
-  Sparkles,
-  Video,
-  Briefcase,
-  BookOpen,
-  Wrench,
-  Code,
-};
+import type * as React from "react";
+import { useState } from "react";
 
 export type FilterOption = {
   label: string;
-  icon?: string;
+  icon?: string; // Now emoji or URL
 };
 
 export type SelectorChipsProps = {
@@ -47,11 +25,20 @@ const SelectorChips: React.FC<SelectorChipsProps> = ({ options, onChange }) => {
     onChange?.(updated);
   };
 
+  const renderIcon = (icon?: string) => {
+    if (!icon) return null;
+    // If it's a URL, render as img
+    if (icon.startsWith("http")) {
+      return <img src={icon} alt="" className="w-3.5 h-3.5" />;
+    }
+    // Otherwise render as emoji/text
+    return <span className="text-sm">{icon}</span>;
+  };
+
   return (
     <div className="flex flex-wrap gap-2.5">
       {options.map((option) => {
         const isSelected = selected.includes(option.label);
-        const Icon = option.icon ? iconMap[option.icon] : undefined;
         return (
           <motion.button
             key={option.label}
@@ -63,7 +50,7 @@ const SelectorChips: React.FC<SelectorChipsProps> = ({ options, onChange }) => {
                 : "bg-transparent border-neutral-300 dark:border-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 hover:border-neutral-400 dark:hover:border-neutral-700"
             }`}
           >
-            {Icon && <Icon size={14} />}
+            {renderIcon(option.icon)}
             <span>{option.label}</span>
             {isSelected && (
               <motion.svg

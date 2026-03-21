@@ -6,7 +6,7 @@
       "description": "The seminal paper that introduced the Transformer architecture",
       "category": "Articles",
       "href": "https://arxiv.org/abs/1706.03762",
-      "icon": "📄"
+      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
     },
     {
       "id": "building-llm-apps",
@@ -14,7 +14,7 @@
       "description": "Comprehensive guide on engineering LLM applications",
       "category": "Articles",
       "href": "https://arxiv.org/abs/2310.20088",
-      "icon": "🤖"
+      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
     },
     {
       "id": "llm-system-design",
@@ -38,7 +38,7 @@
       "description": "Techniques for effective prompt design with LLMs",
       "category": "Advice",
       "href": "https://www.promptingguide.ai/",
-      "icon": "💡"
+      "icon": "https://www.google.com/s2/favicons?domain=www.promptingguide.ai&sz=128"
     },
     {
       "id": "llama-index",
@@ -46,7 +46,7 @@
       "description": "Leading data framework for LLM applications with RAG",
       "category": "Code",
       "href": "https://github.com/run-llama/llama_index",
-      "icon": "🦙"
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
       "id": "langchain",
@@ -54,7 +54,7 @@
       "description": "Popular framework for LLM applications with agents",
       "category": "Code",
       "href": "https://github.com/langchain-ai/langchain",
-      "icon": "🦜"
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
       "id": "autogen",
@@ -62,7 +62,7 @@
       "description": "Microsoft's multi-agent framework for AI applications",
       "category": "Code",
       "href": "https://github.com/microsoft/autogen",
-      "icon": "🎭"
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
       "id": "haystack",
@@ -70,7 +70,7 @@
       "description": "Open-source NLP framework for LLM-powered systems",
       "category": "Code",
       "href": "https://github.com/deepset-ai/haystack",
-      "icon": "🌾"
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
       "id": "ai-engineering-hub",
@@ -78,7 +78,7 @@
       "description": "Curated AI engineering resources and best practices",
       "category": "Code",
       "href": "https://github.com/patchy631/ai-engineering-hub",
-      "icon": "⚡"
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
       "id": "rise-of-ai-engineering",
@@ -94,7 +94,7 @@
       "description": "Building language models from scratch",
       "category": "Videos",
       "href": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9CaThH7WMAiqkXc8i",
-      "icon": "🎥"
+      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
     },
     {
       "id": "fast-ai-practical-deep-learning",
@@ -102,14 +102,34 @@
       "description": "Practical deep learning course for coders",
       "category": "Videos",
       "href": "https://www.fast.ai/",
-      "icon": "📚"
+      "icon": "https://www.google.com/s2/favicons?domain=www.fast.ai&sz=128"
     }
   ],
   "categories": [
-    { "id": "articles", "label": "Articles", "icon": "FileText" },
-    { "id": "advice", "label": "Advice", "icon": "MessageCircle" },
-    { "id": "inspiration", "label": "Inspiration", "icon": "Sparkles" },
-    { "id": "videos", "label": "Videos", "icon": "Video" },
-    { "id": "code", "label": "Code", "icon": "Code" }
+    {
+      "id": "articles",
+      "label": "Articles",
+      "icon": "📄"
+    },
+    {
+      "id": "advice",
+      "label": "Advice",
+      "icon": "💡"
+    },
+    {
+      "id": "inspiration",
+      "label": "Inspiration",
+      "icon": "🚀"
+    },
+    {
+      "id": "videos",
+      "label": "Videos",
+      "icon": "🎥"
+    },
+    {
+      "id": "code",
+      "label": "Code",
+      "icon": "💻"
+    }
   ]
 }
