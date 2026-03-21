@@ -29,6 +29,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="198b8bcd-4aaa-42f3-90bc-9cdfb188d78a"
+        ></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-geist-sans antialiased bg-background text-foreground transition-colors duration-200`}
