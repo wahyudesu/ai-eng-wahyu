@@ -27,7 +27,7 @@ async function updatePersonFavicons() {
   console.log("✅ Updated src/data/person.json with favicons\n");
 }
 
-// Update resource favicons
+// Update resource favicons (items only, not categories)
 async function updateResourceFavicons() {
   const resourcePath = join(process.cwd(), "src/data/resources.json");
   const data = JSON.parse(readFileSync(resourcePath, "utf-8"));
@@ -40,36 +40,13 @@ async function updateResourceFavicons() {
   }
 
   writeFileSync(resourcePath, JSON.stringify(data, null, 2));
-  console.log("✅ Updated src/data/resources.json with favicons\n");
-}
-
-// Update category icons (remove lucide, use emoji)
-function updateCategoryIcons() {
-  const resourcePath = join(process.cwd(), "src/data/resources.json");
-  const data = JSON.parse(readFileSync(resourcePath, "utf-8"));
-
-  const categoryEmojis: Record<string, string> = {
-    articles: "📄",
-    advice: "💡",
-    inspiration: "🚀",
-    videos: "🎥",
-    code: "💻",
-  };
-
-  for (const category of data.categories) {
-    category.icon = categoryEmojis[category.id] || "📁";
-    console.log(`✓ Category: ${category.label} → ${category.icon}`);
-  }
-
-  writeFileSync(resourcePath, JSON.stringify(data, null, 2));
-  console.log("✅ Updated category icons to emojis\n");
+  console.log("✅ Updated src/data/resources.json favicons (categories kept as react-icons)\n");
 }
 
 async function main() {
   console.log("🔄 Updating favicons...\n");
   await updatePersonFavicons();
   await updateResourceFavicons();
-  updateCategoryIcons();
   console.log("✨ All favicons updated!");
 }
 

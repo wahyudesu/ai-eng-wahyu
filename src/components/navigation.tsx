@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ThemeToggle } from "./theme-toggle";
+import { AnimatedThemeToggler } from "./ui/animated-theme-toggler";
 
 const navItems = [
   { href: "/", label: "home" },
@@ -44,7 +44,7 @@ export function Navigation() {
         >
           <FaGithub size={18} />
         </a>
-        <ThemeToggle />
+        <AnimatedThemeToggler className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-neutral-800/50 dark:hover:bg-neutral-800/50 transition-colors text-neutral-600 dark:text-neutral-400" />
       </div>
     </nav>
   );

@@ -109,27 +109,27 @@
     {
       "id": "articles",
       "label": "Articles",
-      "icon": "📄"
+      "icon": "FileText"
     },
     {
       "id": "advice",
       "label": "Advice",
-      "icon": "💡"
+      "icon": "MessageCircle"
     },
     {
       "id": "inspiration",
       "label": "Inspiration",
-      "icon": "🚀"
+      "icon": "Sparkles"
     },
     {
       "id": "videos",
       "label": "Videos",
-      "icon": "🎥"
+      "icon": "Video"
     },
     {
       "id": "code",
       "label": "Code",
-      "icon": "💻"
+      "icon": "Code"
     }
   ]
 }

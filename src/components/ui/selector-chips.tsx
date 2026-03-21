@@ -3,10 +3,24 @@
 import { motion } from "motion/react";
 import type * as React from "react";
 import { useState } from "react";
+import type { IconType } from "react-icons";
+import { FaCode } from "react-icons/fa6";
+import { HiSparkles } from "react-icons/hi";
+import { HiDocumentText } from "react-icons/hi2";
+import { PiVideoDuotone } from "react-icons/pi";
+import { TbMessageCircle } from "react-icons/tb";
+
+const iconMap: Record<string, IconType> = {
+  FileText: HiDocumentText,
+  Video: PiVideoDuotone,
+  Code: FaCode,
+  Sparkles: HiSparkles,
+  MessageCircle: TbMessageCircle,
+};
 
 export type FilterOption = {
   label: string;
-  icon?: string; // Now emoji or URL
+  icon?: string; // Icon name from react-icons OR emoji/favicon URL
 };
 
 export type SelectorChipsProps = {
@@ -27,12 +41,20 @@ const SelectorChips: React.FC<SelectorChipsProps> = ({ options, onChange }) => {
 
   const renderIcon = (icon?: string) => {
     if (!icon) return null;
-    // If it's a URL, render as img
+
+    // If it's a URL, render as img (favicon)
     if (icon.startsWith("http")) {
       return <img src={icon} alt="" className="w-3.5 h-3.5" />;
     }
-    // Otherwise render as emoji/text
-    return <span className="text-sm">{icon}</span>;
+
+    // If it's an emoji (not in iconMap), render as text
+    if (!iconMap[icon]) {
+      return <span className="text-sm">{icon}</span>;
+    }
+
+    // Otherwise render as react-icons component
+    const Icon = iconMap[icon];
+    return <Icon size={14} />;
   };
 
   return (
