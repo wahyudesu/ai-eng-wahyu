@@ -6,29 +6,29 @@ The best AI engineers and resources for building intelligent applications.
 
 Follow these amazing AI engineers, researchers, and practitioners on social media.
 
-### Andrew Ng
-> AI/ML Expert & Founder at DeepLearning.AI
-> [𝕏 @AndrewYNg](https://x.com/AndrewYNg)
+### Muhamad Ariel Akilie
+> AI Engineering Leader at Kata AI
+> [LinkedIn](https://www.linkedin.com/in/arielakilie/)
+
+### Alfan Dinda Rahmawan
+> Senior Data Scientist / AI Engineer at Glair
+> [LinkedIn](https://www.linkedin.com/in/alfandindarahmawan/)
 
 ### Andrej Karpathy
-> AI Researcher & Founder of Eureka Labs
+> Ex-Director of AI at Tesla, Ex-Founding Member of OpenAI
 > [𝕏 @karpathy](https://x.com/karpathy)
 
-### Jerry Liu
-> Co-founder of LangChain & AI Engineer
-> [𝕏 @jerryjliu](https://x.com/jerryjliu)
+### Andrew Ng
+> Co-Founder of Coursera, Founder of DeepLearning.AI
+> [𝕏 @AndrewYNg](https://x.com/AndrewYNg)
 
-### Harrison Chase
-> Founder & CEO of LangChain
-> [𝕏 @harrisonchase](https://x.com/harrisonchase)
+### Boris Cherny
+> Head of Claude Code at Anthropic
+> [𝕏 @bcherny](https://x.com/bcherny)
 
-### Shyamal Anadkat
-> AI Engineer & LlamaIndex Contributor
-> [𝕏 @shyamal_anadkat](https://x.com/shyamal_anadkat)
-
-### Sadie St. Lawrence
-> AI & Data Science Educator
-> [📷 @sadie.stlawrence](https://www.instagram.com/sadie.stlawrence/)
+### Andrew Zhai
+> ML Engineer
+> [𝕏 @ZhaiAndrew](https://x.com/ZhaiAndrew)
 
 ---
 
