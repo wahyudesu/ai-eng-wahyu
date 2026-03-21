@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Engineering Hub
 
-## Getting Started
+The best AI engineers and resources for building intelligent applications.
 
-First, run the development server:
+## 👥 AI Engineers to Follow
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Follow these amazing AI engineers, researchers, and practitioners on social media.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Andrew Ng
+> AI/ML Expert & Founder at DeepLearning.AI
+> [𝕏 @AndrewYNg](https://x.com/AndrewYNg)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Andrej Karpathy
+> AI Researcher & Founder of Eureka Labs
+> [𝕏 @karpathy](https://x.com/karpathy)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Jerry Liu
+> Co-founder of LangChain & AI Engineer
+> [𝕏 @jerryjliu](https://x.com/jerryjliu)
 
-## Learn More
+### Harrison Chase
+> Founder & CEO of LangChain
+> [𝕏 @harrisonchase](https://x.com/harrisonchase)
 
-To learn more about Next.js, take a look at the following resources:
+### Shyamal Anadkat
+> AI Engineer & LlamaIndex Contributor
+> [𝕏 @shyamal_anadkat](https://x.com/shyamal_anadkat)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Sadie St. Lawrence
+> AI & Data Science Educator
+> [📷 @sadie.stlawrence](https://www.instagram.com/sadie.stlawrence/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📚 Resources
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Learn AI engineering from the best resources, frameworks, and practitioners.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📄 Articles
+
+#### [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+The seminal paper that introduced the Transformer architecture
+
+#### [Building LLM Applications for Production](https://arxiv.org/abs/2310.20088)
+Comprehensive guide on engineering LLM applications
+
+#### LLM System Design Principles
+Key architectural patterns for building robust LLM systems
+
+#### RAG Best Practices
+Production-ready patterns for RAG in enterprise
+
+### 💡 Advice
+
+#### [Prompt Engineering Guide](https://www.promptingguide.ai/)
+Techniques for effective prompt design with LLMs
+
+### 🚀 Inspiration
+
+#### The Rise of AI Engineering
+How AI engineering emerged as a critical discipline
+
+### 🎥 Videos
+
+#### [Andrej Karpathy's LLM Course](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9CaThH7WMAiqkXc8i)
+Building language models from scratch
+
+#### [Fast.ai Practical Deep Learning](https://www.fast.ai/)
+Practical deep learning course for coders
+
+### 💻 Code
+
+#### [LlamaIndex](https://github.com/run-llama/llama_index)
+Leading data framework for LLM applications with RAG
+
+#### [LangChain](https://github.com/langchain-ai/langchain)
+Popular framework for LLM applications with agents
+
+#### [AutoGen](https://github.com/microsoft/autogen)
+Microsoft's multi-agent framework for AI applications
+
+#### [Haystack](https://github.com/deepset-ai/haystack)
+Open-source NLP framework for LLM-powered systems
+
+#### [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub)
+Curated AI engineering resources and best practices
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ for the AI engineering community</sub>
+</p>
