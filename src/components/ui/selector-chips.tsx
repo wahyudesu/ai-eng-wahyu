@@ -46,7 +46,7 @@ const SelectorChips: React.FC<SelectorChipsProps> = ({ options, onChange }) => {
 
     // If it's a URL, render as img (favicon)
     if (icon.startsWith("http")) {
-      return <img src={icon} alt="" className="w-3.5 h-3.5" />;
+      return <img src={icon} alt="" className="w-3.5 h-3.5" aria-hidden="true" />;
     }
 
     // If it's an emoji (not in iconMap), render as text
@@ -68,7 +68,7 @@ const SelectorChips: React.FC<SelectorChipsProps> = ({ options, onChange }) => {
             key={option.label}
             onClick={() => toggleChip(option.label)}
             initial={false}
-            className={`flex items-center gap-2 px-3 py-1 rounded-full border text-sm font-medium transition-all ${
+            className={`flex items-center gap-2 px-3 py-1 rounded-full border text-sm font-medium transition-colors duration-200 ${
               isSelected
                 ? "bg-blue-500 border-blue-500 text-white"
                 : "bg-transparent border-neutral-300 dark:border-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 hover:border-neutral-400 dark:hover:border-neutral-700"

@@ -61,13 +61,18 @@ export const LinkPreview = ({
 
   const springConfig = { stiffness: 100, damping: 15 };
   const x = useMotionValue(0);
+  const targetWidthRef = React.useRef<number>(0);
 
   const translateX = useSpring(x, springConfig);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
-    const targetRect = (event.target as HTMLElement).getBoundingClientRect();
-    const eventOffsetX = event.clientX - targetRect.left;
-    const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2; // Reduce the effect to make it subtle
+    const target = event.target as HTMLElement;
+    // Cache width to avoid layout read on every mouse move
+    if (!targetWidthRef.current) {
+      targetWidthRef.current = target.offsetWidth;
+    }
+    const eventOffsetX = event.clientX - target.getBoundingClientRect().left;
+    const offsetFromCenter = (eventOffsetX - targetWidthRef.current / 2) / 2;
     x.set(offsetFromCenter);
   };
 
@@ -75,7 +80,7 @@ export const LinkPreview = ({
     <>
       {isMounted ? (
         <div className="hidden">
-          <img src={src} width={width} height={height} alt="hidden image" />
+          <img src={src} width={width} height={height} alt="" aria-hidden="true" />
         </div>
       ) : null}
 
@@ -176,14 +181,18 @@ function useHoverState(followMouse: boolean) {
   const mouseX = useMotionValue(0);
   const springConfig = { stiffness: 120, damping: 20 };
   const followX = useSpring(mouseX, springConfig);
+  const targetWidthRef = React.useRef<number>(0);
 
   const handlePointerMove = React.useCallback(
     (event: React.PointerEvent<HTMLElement>) => {
       if (!followMouse) return;
       const target = event.currentTarget;
-      const targetRect = target.getBoundingClientRect();
-      const eventOffsetX = event.clientX - targetRect.left;
-      const offsetFromCenter = (eventOffsetX - targetRect.width / 2) * 0.3;
+      // Cache width to avoid layout read on every pointer move
+      if (!targetWidthRef.current) {
+        targetWidthRef.current = target.offsetWidth;
+      }
+      const eventOffsetX = event.clientX - target.getBoundingClientRect().left;
+      const offsetFromCenter = (eventOffsetX - targetWidthRef.current / 2) * 0.3;
       mouseX.set(offsetFromCenter);
     },
     [mouseX, followMouse],

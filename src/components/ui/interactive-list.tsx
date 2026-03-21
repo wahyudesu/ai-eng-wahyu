@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HoverPeek } from "./link-preview";
 import Image from "next/image";
 
@@ -16,11 +16,18 @@ export type ListItemProps = {
 
 type InteractiveListProps = {
   items: ListItemProps[];
-  onItemClick?: (item: ListItemProps) => void;
 };
 
-export function InteractiveList({ items, onItemClick }: InteractiveListProps) {
+export function InteractiveList({ items }: InteractiveListProps) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <ul className="space-y-2 text-sm">
@@ -29,7 +36,7 @@ export function InteractiveList({ items, onItemClick }: InteractiveListProps) {
         const content = (
           <>
             {item.icon.startsWith?.("http") ? (
-              <Image src={item.icon} alt="" width={24} height={24} className="w-6 h-6 shrink-0 rounded-full object-cover" />
+              <Image src={item.icon} alt="" width={24} height={24} className="w-6 h-6 shrink-0 rounded-full object-cover" quality={50} aria-hidden="true" />
             ) : (
               <span className="text-base shrink-0">{item.icon}</span>
             )}
@@ -59,7 +66,6 @@ export function InteractiveList({ items, onItemClick }: InteractiveListProps) {
             key={item.id}
             onMouseEnter={() => setHoveredId(item.id)}
             onMouseLeave={() => setHoveredId(null)}
-            onClick={() => onItemClick?.(item)}
             className={`flex items-center gap-2 group transition-opacity duration-200 ${
               isHovered
                 ? "opacity-100"
@@ -69,7 +75,7 @@ export function InteractiveList({ items, onItemClick }: InteractiveListProps) {
             }`}
           >
             {item.href ? (
-              <HoverPeek url={item.previewUrl || item.href}>
+              isMobile ? (
                 <a
                   href={item.href}
                   target="_blank"
@@ -78,9 +84,20 @@ export function InteractiveList({ items, onItemClick }: InteractiveListProps) {
                 >
                   {content}
                 </a>
-              </HoverPeek>
+              ) : (
+                <HoverPeek url={item.previewUrl || item.href}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 w-full"
+                  >
+                    {content}
+                  </a>
+                </HoverPeek>
+              )
             ) : (
-              <button className="flex items-center gap-2 w-full text-left">
+              <button type="button" className="flex items-center gap-2 w-full text-left">
                 {content}
               </button>
             )}
