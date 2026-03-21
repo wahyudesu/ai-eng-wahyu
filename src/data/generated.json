@@ -1,0 +1,197 @@
+{
+  "personData": {
+    "title": "AI Engineers to Follow",
+    "description": "Follow these amazing AI engineers on social media",
+    "persons": [
+      {
+        "id": "AndrewYNg",
+        "name": "Andrew Ng",
+        "role": "AI/ML Expert & Founder at DeepLearning.AI",
+        "icon": "𝕏",
+        "social": {
+          "twitter": "https://x.com/AndrewYNg"
+        }
+      },
+      {
+        "id": "karpathy",
+        "name": "Andrej Karpathy",
+        "role": "AI Researcher & Founder of Eureka Labs",
+        "icon": "𝕏",
+        "social": {
+          "twitter": "https://x.com/karpathy"
+        }
+      },
+      {
+        "id": "jerryjliu",
+        "name": "Jerry Liu",
+        "role": "Co-founder of LangChain & AI Engineer",
+        "icon": "𝕏",
+        "social": {
+          "twitter": "https://x.com/jerryjliu"
+        }
+      },
+      {
+        "id": "harrisonchase",
+        "name": "Harrison Chase",
+        "role": "Founder & CEO of LangChain",
+        "icon": "𝕏",
+        "social": {
+          "twitter": "https://x.com/harrisonchase"
+        }
+      },
+      {
+        "id": "shyamal_anadkat",
+        "name": "Shyamal Anadkat",
+        "role": "AI Engineer & LlamaIndex Contributor",
+        "icon": "𝕏",
+        "social": {
+          "twitter": "https://x.com/shyamal_anadkat"
+        }
+      },
+      {
+        "id": "sadie.stlawrence",
+        "name": "Sadie St. Lawrence",
+        "role": "AI & Data Science Educator",
+        "icon": "📷",
+        "social": {
+          "instagram": "https://www.instagram.com/sadie.stlawrence/"
+        }
+      }
+    ]
+  },
+  "resourcesData": {
+    "resources": [
+      {
+        "id": "attention-is-all-you-need",
+        "title": "Attention Is All You Need",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://arxiv.org/abs/1706.03762",
+        "icon": "🔗"
+      },
+      {
+        "id": "building-llm-applications-for-production",
+        "title": "Building LLM Applications for Production",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://arxiv.org/abs/2310.20088",
+        "icon": "🔗"
+      },
+      {
+        "id": "llm-system-design-principles",
+        "title": "LLM System Design Principles",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "#",
+        "icon": "🔗"
+      },
+      {
+        "id": "rag-best-practices",
+        "title": "RAG Best Practices",
+        "description": "AI Engineering Resource",
+        "category": "Advice",
+        "href": "#",
+        "icon": "🔗"
+      },
+      {
+        "id": "prompt-engineering-guide",
+        "title": "Prompt Engineering Guide",
+        "description": "AI Engineering Resource",
+        "category": "Inspiration",
+        "href": "https://www.promptingguide.ai/",
+        "icon": "🔗"
+      },
+      {
+        "id": "the-rise-of-ai-engineering",
+        "title": "The Rise of AI Engineering",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "#",
+        "icon": "🔗"
+      },
+      {
+        "id": "andrej-karpathy's-llm-course",
+        "title": "Andrej Karpathy's LLM Course",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9CaThH7WMAiqkXc8i",
+        "icon": "🔗"
+      },
+      {
+        "id": "fast.ai-practical-deep-learning",
+        "title": "Fast.ai Practical Deep Learning",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://www.fast.ai/",
+        "icon": "🔗"
+      },
+      {
+        "id": "llamaindex",
+        "title": "LlamaIndex",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/run-llama/llama_index",
+        "icon": "🔗"
+      },
+      {
+        "id": "langchain",
+        "title": "LangChain",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/langchain-ai/langchain",
+        "icon": "🔗"
+      },
+      {
+        "id": "autogen",
+        "title": "AutoGen",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/microsoft/autogen",
+        "icon": "🔗"
+      },
+      {
+        "id": "haystack",
+        "title": "Haystack",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/deepset-ai/haystack",
+        "icon": "🔗"
+      },
+      {
+        "id": "ai-engineering-hub",
+        "title": "AI Engineering Hub",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/patchy631/ai-engineering-hub",
+        "icon": "🔗"
+      }
+    ],
+    "categories": [
+      {
+        "id": "articles",
+        "label": "Articles",
+        "icon": "FileText"
+      },
+      {
+        "id": "advice",
+        "label": "Advice",
+        "icon": "MessageCircle"
+      },
+      {
+        "id": "inspiration",
+        "label": "Inspiration",
+        "icon": "Sparkles"
+      },
+      {
+        "id": "videos",
+        "label": "Videos",
+        "icon": "Video"
+      },
+      {
+        "id": "code",
+        "label": "Code",
+        "icon": "Code"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "title": "AI Engineers to Follow",
+  "description": "Follow these amazing AI engineers, researchers, and practitioners on social media",
+  "persons": [
+    {
+      "id": "andrew-ng",
+      "name": "Andrew Ng",
+      "role": "AI/ML Expert & Founder at DeepLearning.AI",
+      "icon": "🧠",
+      "social": {
+        "twitter": "https://x.com/AndrewYNg"
+      }
+    },
+    {
+      "id": "andrej-karpathy",
+      "name": "Andrej Karpathy",
+      "role": "AI Researcher & Founder of Eureka Labs",
+      "icon": "🤖",
+      "social": {
+        "twitter": "https://x.com/karpathy"
+      }
+    },
+    {
+      "id": "jerry-liu",
+      "name": "Jerry Liu",
+      "role": "Co-founder of LangChain & AI Engineer",
+      "icon": "🦜",
+      "social": {
+        "twitter": "https://x.com/jerryjliu"
+      }
+    },
+    {
+      "id": "sadie-stlawrence",
+      "name": "Sadie St. Lawrence",
+      "role": "AI & Data Science Educator",
+      "icon": "👩‍🏫",
+      "social": {
+        "instagram": "https://www.instagram.com/sadie.stlawrence/"
+      }
+    },
+    {
+      "id": "harrison-chase",
+      "name": "Harrison Chase",
+      "role": "Founder & CEO of LangChain",
+      "icon": "⚡",
+      "social": {
+        "twitter": "https://x.com/harrisonchase"
+      }
+    },
+    {
+      "id": "shyamal-anadkat",
+      "name": "Shyamal Anadkat",
+      "role": "AI Engineer & LlamaIndex Contributor",
+      "icon": "🦙",
+      "social": {
+        "twitter": "https://x.com/shyamal_anadkat"
+      }
+    }
+  ]
+}
