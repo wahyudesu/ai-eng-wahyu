@@ -18,7 +18,7 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-between items-center py-5">
+    <nav className="flex justify-between items-center py-2">
       <ul className="flex gap-4 text-sm text-muted-foreground">
         {navItems.map((item) => (
           <li key={item.href}>
