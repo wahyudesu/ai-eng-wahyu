@@ -14,196 +14,29 @@ export const metadata: Metadata = {
   },
 };
 
-// Jobs page structured data
-const jobsPageLd = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "AI Engineering Jobs",
-  description:
-    "Explore curated AI engineering job opportunities at top companies like OpenAI, Anthropic, DeepMind, and more. Remote and on-site positions available.",
-  url: "https://aieng.wahyuikbal.com/jobs",
-};
+import { AsciiLarge } from "@/components/ascii-large";
 
-const breadcrumbLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://aieng.wahyuikbal.com",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Jobs",
-      item: "https://aieng.wahyuikbal.com/jobs",
-    },
-  ],
-};
-
-import { Clock, DollarSign, MapPin } from "lucide-react";
-import Image from "next/image";
-import { AsciiAi } from "@/components/ascii-ai";
-import { Button } from "@/components/ui/button";
-
-export default function JobsPage() {
-  const jobs = [
-    {
-      id: 1,
-      role: "Senior AI Engineer",
-      company: "OpenAI",
-      companyLogo:
-        "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=100&h=100&fit=crop&crop=center",
-      duration: "Full-time",
-      location: "San Francisco, USA",
-      salary: "$200k - $350k",
-    },
-    {
-      id: 2,
-      role: "ML Research Engineer",
-      company: "Anthropic",
-      companyLogo:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop&crop=center",
-      duration: "Full-time",
-      location: "Remote",
-      salary: undefined,
-    },
-    {
-      id: 3,
-      role: "AI Platform Engineer",
-      company: "DeepMind",
-      companyLogo:
-        "https://images.unsplash.com/photo-1676299081847-824916de030a?w=100&h=100&fit=crop&crop=center",
-      duration: "Contract (6 months)",
-      location: "London, UK",
-      salary: "£150k - £200k",
-    },
-    {
-      id: 4,
-      role: "LLM Engineer",
-      company: "LangChain",
-      companyLogo:
-        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=100&h=100&fit=crop&crop=center",
-      duration: "Full-time",
-      location: "Remote",
-      salary: undefined,
-    },
-    {
-      id: 5,
-      role: "AI Infrastructure Engineer",
-      company: "Together AI",
-      companyLogo:
-        "https://images.unsplash.com/photo-1626544827763-d516dce335e2?w=100&h=100&fit=crop&crop=center",
-      duration: "Full-time",
-      location: "San Francisco, USA",
-      salary: "$180k - $280k",
-    },
-  ];
-
+export default function ToolsPage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jobsPageLd),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbLd),
-        }}
-      />
-      <div className="min-h-screen font-sans selection:bg-foreground/10 dark:selection:bg-foreground/20">
-        <div className="max-w-2xl mx-auto px-4 py-8">
-          <Navigation />
-          <main className="flex flex-col gap-16 py-6">
-            <header>
-              <AsciiAi />
+    <div className="min-h-screen font-sans selection:bg-foreground/10 dark:selection:bg-foreground/20">
+      <div className="max-w-2xl mx-auto px-4 py-8">
+        <Navigation />
 
-              <h1 className="text-2xl font-medium text-foreground mb-3">
-                AI Engineering
-              </h1>
-              <p className="text-base text-muted-foreground">
-                The best AI & ML engineers on the internet, and everything you
-                need to become one
-              </p>
-            </header>
+        <main className="items-center">
+          {/* ASCII Art */}
+          <AsciiLarge />
 
-            {/* Job Listings */}
-            <section aria-labelledby="job-listings-heading">
-              <h2
-                id="job-listings-heading"
-                className="sr-only text-xl font-medium text-foreground mb-2"
-              >
-                Job Listings
-              </h2>
-              <div className="space-y-3">
-                {jobs.map((job) => (
-                  <article
-                    key={job.id}
-                    className="p-4 rounded-lg border border-border hover:border-foreground/20 hover:bg-muted/30 transition-all"
-                  >
-                    <div className="flex items-start gap-3">
-                      {/* Company Logo */}
-                      <Image
-                        src={job.companyLogo}
-                        alt={`${job.company} logo`}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12 rounded-lg object-cover"
-                      />
-
-                      {/* Job Details */}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-start justify-between gap-3">
-                          <div className="flex-1">
-                            <h2 className="text-base font-medium text-foreground">
-                              {job.role}
-                            </h2>
-                            <p className="text-sm text-muted-foreground mt-0.5">
-                              {job.company}
-                            </p>
-                          </div>
-
-                          {/* Apply Button */}
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            aria-label={`Apply for ${job.role} at ${job.company}`}
-                          >
-                            Apply
-                          </Button>
-                        </div>
-
-                        {/* Meta Info */}
-                        <div className="flex items-center gap-4 mt-3 flex-wrap">
-                          <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                            <MapPin size={12} />
-                            <span>{job.location}</span>
-                          </span>
-                          <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                            <Clock size={12} />
-                            <span>{job.duration}</span>
-                          </span>
-                          {job.salary && (
-                            <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                              <DollarSign size={12} />
-                              <span>{job.salary}</span>
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          </main>
-        </div>
+          {/* Coming Soon */}
+          <section className="py-20 text-center">
+            <h2 className="text-xl font-medium text-foreground mb-2">
+              Coming Soon
+            </h2>
+            <p className="text-base text-muted-foreground">
+              We&apos;re working on something great. Stay tuned!
+            </p>
+          </section>
+        </main>
       </div>
-    </>
+    </div>
   );
 }

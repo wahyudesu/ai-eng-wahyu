@@ -37,14 +37,16 @@ export default function HomePage() {
     };
   });
 
-  const resources = resourcesData.resources.map((r) => ({
-    id: r.id,
-    icon: r.icon,
-    title: r.title,
-    description: r.description,
-    href: r.href,
-    category: r.category,
-  }));
+  const resources = resourcesData.resources
+    .map((r) => ({
+      id: r.id,
+      icon: r.icon,
+      title: r.title,
+      description: r.description,
+      href: r.href,
+      category: r.category,
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title));
 
   // Get filter options from categories (using emoji icons)
   const filterOptions = resourcesData.categories.map((cat) => ({
