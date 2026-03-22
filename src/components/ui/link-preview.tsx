@@ -85,7 +85,7 @@ export const LinkPreview = ({
       ) : null}
 
       <HoverCardPrimitive.Root
-        openDelay={50}
+        openDelay={500}
         closeDelay={100}
         onOpenChange={(open) => {
           setOpen(open);
@@ -331,7 +331,7 @@ export const HoverPeek = ({
 
   return (
     <HoverCardPrimitive.Root
-      openDelay={75}
+      openDelay={500}
       closeDelay={150}
       onOpenChange={handleOpenChange}
     >
