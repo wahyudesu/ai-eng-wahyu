@@ -37,7 +37,7 @@
       "title": "AI Engineering",
       "description": "O'Reilly's comprehensive AI engineering guide",
       "category": "Books",
-      "href": "https://www.oreilly.com/library/view/ai-engineering/9781098166302/",
+      "href": "https://www.oreilly.com/library/view/ai-engineering/9781098166298/",
       "icon": "https://www.google.com/s2/favicons?domain=www.oreilly.com&sz=128"
     },
     {
@@ -45,8 +45,8 @@
       "title": "Building LLMs for Production",
       "description": "Practical guide to production LLMs",
       "category": "Books",
-      "href": "https://www.manning.com/books/building-llms-for-production",
-      "icon": "https://www.google.com/s2/favicons?domain=www.manning.com&sz=128"
+      "href": "https://www.oreilly.com/library/view/building-llms-for/9798324731472/",
+      "icon": "https://www.google.com/s2/favicons?domain=www.oreilly.com&sz=128"
     },
     {
       "id": "designing-machine-learning-systems",
@@ -59,34 +59,10 @@
     {
       "id": "llm-engineers-handbook",
       "title": "LLM Engineer's Handbook",
-      "description": "Essential handbook for LLM engineers",
+      "description": "Guide to mastering Large Language Models from concept to deployment",
       "category": "Books",
-      "href": "https://www.packtpub.com/product/llm-engineers-handbook/9781835089273",
+      "href": "https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/",
       "icon": "https://www.google.com/s2/favicons?domain=www.packtpub.com&sz=128"
-    },
-    {
-      "id": "llms-in-production",
-      "title": "LLMs in Production",
-      "description": "Deploy and scale LLM applications",
-      "category": "Books",
-      "href": "https://www.manning.com/books/llms-in-production",
-      "icon": "https://www.google.com/s2/favicons?domain=www.manning.com&sz=128"
-    },
-    {
-      "id": "prompt-engineering-for-llms",
-      "title": "Prompt Engineering for LLMs",
-      "description": "Master prompt engineering techniques",
-      "category": "Books",
-      "href": "https://www.manning.com/books/prompt-engineering-for-llms",
-      "icon": "https://www.google.com/s2/favicons?domain=www.manning.com&sz=128"
-    },
-    {
-      "id": "building-llm-apps",
-      "title": "Building LLM Applications for Production",
-      "description": "Comprehensive guide on engineering LLM applications",
-      "category": "Articles",
-      "href": "https://arxiv.org/abs/2310.20088",
-      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
     },
     {
       "id": "sebastian-raschka-magazine",
@@ -127,14 +103,6 @@
       "category": "Videos",
       "href": "https://youtu.be/CEvIs9y1uog?si=CBFzZ2CGl_FAAQcR",
       "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
-    },
-    {
-      "id": "fast-ai-practical-deep-learning",
-      "title": "Fast.ai Practical Deep Learning",
-      "description": "Practical deep learning course for coders",
-      "category": "Videos",
-      "href": "https://www.fast.ai/",
-      "icon": "🚀"
     },
     {
       "id": "finetune-llm-claude-code",
