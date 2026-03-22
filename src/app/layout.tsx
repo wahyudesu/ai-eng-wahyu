@@ -129,7 +129,7 @@ export default function RootLayout({
         />
         <script
           defer
-          src="https://cloud.umami.is/script.js"
+          src="https://umami-personal-web-analytics.vercel.app/script.js"
           data-website-id="198b8bcd-4aaa-42f3-90bc-9cdfb188d78a"
         ></script>
       </head>
