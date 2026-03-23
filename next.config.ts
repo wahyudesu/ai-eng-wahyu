@@ -33,6 +33,22 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "pbs.twimg.com",
       },
+      {
+        protocol: "https",
+        hostname: "phoenix.arize.com",
+      },
+      {
+        protocol: "https",
+        hostname: "braintrust.dev",
+      },
+      {
+        protocol: "https",
+        hostname: "flowiseai.com",
+      },
+      {
+        protocol: "https",
+        hostname: "langflow.org",
+      },
     ],
   },
 };

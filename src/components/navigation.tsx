@@ -18,10 +18,17 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-between items-center py-2">
+    <nav className="flex justify-between items-center py-3">
       <ul className="flex gap-4 text-sm text-muted-foreground">
         {navItems.map((item) => (
-          <li key={item.href} className="flex flex-col items-center gap-0.5">
+          <li key={item.href} className="flex flex-col items-center">
+            {"badge" in item && pathname !== item.href ? (
+              <span className="text-[9px] leading-none px-1 py-0.5 rounded-full font-medium bg-primary/10 text-primary mb-0.5">
+                {item.badge}
+              </span>
+            ) : (
+              <span className="text-[9px] leading-none h-3 mb-0.5" />
+            )}
             <Link
               href={item.href}
               className={`transition-colors duration-200 ${
@@ -32,13 +39,6 @@ export function Navigation() {
             >
               {item.label}
             </Link>
-            <span className={`text-[9px] leading-none px-1 py-0.5 rounded-full font-medium ${
-              item.badge && pathname !== item.href
-                ? "bg-primary/10 text-primary"
-                : "opacity-0"
-            }`}>
-              {item.badge || "new"}
-            </span>
           </li>
         ))}
       </ul>

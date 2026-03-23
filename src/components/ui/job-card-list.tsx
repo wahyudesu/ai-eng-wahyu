@@ -9,6 +9,7 @@ export type Job = {
   title: string;
   company: string;
   type: string;
+  location: string;
   href: string;
   icon: string;
 };
@@ -63,21 +64,18 @@ export function JobCardList({ jobs }: JobCardListProps) {
             {/* Content */}
             <div className="flex-1 min-w-0">
               <h3 className="text-base font-medium text-foreground group-hover:text-primary transition-colors">
-                {job.title}
+                {job.company}
               </h3>
-              <div className="flex items-center gap-2 mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {job.company}
-                </span>
-                <span className="text-neutral-300 dark:text-neutral-700">•</span>
-                <span className="text-sm text-neutral-500 dark:text-neutral-400">
-                  {job.type}
-                </span>
+              <div className="text-sm text-muted-foreground">
+                {job.title}
               </div>
             </div>
 
-            {/* Arrow indicator */}
-            <div className="shrink-0">
+            {/* Location */}
+            <div className="shrink-0 text-right">
+              <div className="text-xs text-muted-foreground">
+                {job.location}
+              </div>
               <motion.svg
                 width="20"
                 height="20"
@@ -87,7 +85,7 @@ export function JobCardList({ jobs }: JobCardListProps) {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-neutral-400 dark:text-neutral-600 group-hover:text-primary transition-colors"
+                className="text-neutral-400 dark:text-neutral-600 group-hover:text-primary transition-colors ml-auto mt-1"
                 animate={
                   hoveredId === job.id
                     ? { x: [0, 4, 0] }

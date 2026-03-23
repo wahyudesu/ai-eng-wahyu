@@ -7,104 +7,50 @@
       "label": "LLM Gateway / Provider",
       "icon": "",
       "tools": [
-        {
-          "id": "openai",
-          "name": "OpenAI",
-          "href": "https://openai.com",
-          "icon": "https://www.google.com/s2/favicons?domain=openai.com&sz=128"
-        },
-        {
-          "id": "anthropic",
-          "name": "Anthropic",
-          "href": "https://anthropic.com",
-          "icon": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
-        },
-        {
-          "id": "openrouter",
-          "name": "OpenRouter",
-          "href": "https://openrouter.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=openrouter.ai&sz=128"
-        },
-        {
-          "id": "sumopod",
-          "name": "Sumopod",
-          "href": "https://sumopod.com",
-          "icon": "https://www.google.com/s2/favicons?domain=sumopod.com&sz=128"
-        }
+        { "id": "openai", "name": "OpenAI", "href": "https://openai.com", "icon": "lobe:OpenAI" },
+        { "id": "anthropic", "name": "Anthropic", "href": "https://anthropic.com", "icon": "lobe:Anthropic" },
+        { "id": "google", "name": "Google Gemini", "href": "https://ai.google.dev", "icon": "lobe:Gemini" },
+        { "id": "groq", "name": "Groq", "href": "https://groq.com", "icon": "lobe:Groq" },
+        { "id": "openrouter", "name": "OpenRouter", "href": "https://openrouter.ai", "icon": "lobe:OpenRouter" },
+        { "id": "together", "name": "Together AI", "href": "https://together.ai", "icon": "lobe:Together" },
+        { "id": "fireworks", "name": "Fireworks", "href": "https://fireworks.ai", "icon": "lobe:Fireworks" },
+        { "id": "cohere", "name": "Cohere", "href": "https://cohere.com", "icon": "lobe:Cohere" },
+        { "id": "mistral", "name": "Mistral", "href": "https://mistral.ai", "icon": "lobe:Mistral" },
+        { "id": "perplexity", "name": "Perplexity", "href": "https://perplexity.ai", "icon": "lobe:Perplexity" },
+        { "id": "xai", "name": "xAI", "href": "https://x.ai", "icon": "lobe:XAI" },
+        { "id": "replicate", "name": "Replicate", "href": "https://replicate.com", "icon": "lobe:Replicate" },
+        { "id": "deepseek", "name": "DeepSeek", "href": "https://deepseek.com", "icon": "lobe:DeepSeek" },
+        { "id": "bedrock", "name": "AWS Bedrock", "href": "https://aws.amazon.com/bedrock", "icon": "lobe:Bedrock" },
+        { "id": "azure", "name": "Azure AI", "href": "https://azure.microsoft.com/products/ai-services", "icon": "lobe:AzureAI" }
       ]
     },
     {
       "id": "vector-db",
       "label": "Vector Database",
-      "icon": "🗄️",
-      "tools": []
+      "icon": "",
+      "tools": [
+        { "id": "pinecone", "name": "Pinecone", "href": "https://pinecone.io", "icon": "https://www.google.com/s2/favicons?domain=pinecone.io&sz=128" },
+        { "id": "weaviate", "name": "Weaviate", "href": "https://weaviate.io", "icon": "https://www.google.com/s2/favicons?domain=weaviate.io&sz=128" },
+        { "id": "qdrant", "name": "Qdrant", "href": "https://qdrant.io", "icon": "https://www.google.com/s2/favicons?domain=qdrant.io&sz=128" },
+        { "id": "chroma", "name": "Chroma", "href": "https://trychroma.com", "icon": "https://www.google.com/s2/favicons?domain=trychroma.com&sz=128" },
+        { "id": "milvus", "name": "Milvus", "href": "https://milvus.io", "icon": "https://www.google.com/s2/favicons?domain=milvus.io&sz=128" },
+        { "id": "supabase", "name": "Supabase", "href": "https://supabase.com", "icon": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128" },
+        { "id": "neon", "name": "Neon", "href": "https://neon.tech", "icon": "https://www.google.com/s2/favicons?domain=neon.tech&sz=128" }
+      ]
     },
     {
       "id": "agent-framework",
       "label": "Agent Framework",
       "icon": "",
       "tools": [
-        {
-          "id": "langchain",
-          "name": "LangChain",
-          "href": "https://langchain.com",
-          "icon": "https://www.google.com/s2/favicons?domain=langchain.com&sz=128"
-        },
-        {
-          "id": "haystack",
-          "name": "Haystack",
-          "href": "https://haystack.deepset.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=haystack.deepset.ai&sz=128"
-        },
-        {
-          "id": "vercel-ai-sdk",
-          "name": "Vercel AI SDK",
-          "href": "https://sdk.vercel.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=sdk.vercel.ai&sz=128"
-        },
-        {
-          "id": "langgraph",
-          "name": "LangGraph",
-          "href": "https://langchain-ai.github.io/langgraph",
-          "icon": "https://www.google.com/s2/favicons?domain=langchain-ai.github.io&sz=128"
-        },
-        {
-          "id": "mastra",
-          "name": "Mastra",
-          "href": "https://mastra.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=mastra.ai&sz=128"
-        },
-        {
-          "id": "google-ada",
-          "name": "Google ADA",
-          "href": "https://ai.google.dev",
-          "icon": "https://www.google.com/s2/favicons?domain=ai.google.dev&sz=128"
-        }
-      ]
-    },
-    {
-      "id": "no-code",
-      "label": "No Code",
-      "icon": "",
-      "tools": [
-        {
-          "id": "n8n",
-          "name": "n8n",
-          "href": "https://n8n.io",
-          "icon": "https://www.google.com/s2/favicons?domain=n8n.io&sz=128"
-        },
-        {
-          "id": "dify",
-          "name": "Dify",
-          "href": "https://dify.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=dify.ai&sz=128"
-        },
-        {
-          "id": "langflow",
-          "name": "Langflow",
-          "href": "https://langflow.org",
-          "icon": "https://www.google.com/s2/favicons?domain=langflow.org&sz=128"
-        }
+        { "id": "langchain", "name": "LangChain", "href": "https://langchain.com", "icon": "lobe:LangChain" },
+        { "id": "langgraph", "name": "LangGraph", "href": "https://langchain-ai.github.io/langgraph", "icon": "lobe:LangGraph" },
+        { "id": "vercel-ai", "name": "Vercel AI SDK", "href": "https://sdk.vercel.ai", "icon": "lobe:Vercel" },
+        { "id": "llamaindex", "name": "LlamaIndex", "href": "https://llamaindex.ai", "icon": "lobe:LlamaIndex" },
+        { "id": "crewai", "name": "CrewAI", "href": "https://crewai.com", "icon": "lobe:CrewAI" },
+        { "id": "dify", "name": "Dify", "href": "https://dify.ai", "icon": "lobe:Dify" },
+        { "id": "mastra", "name": "Mastra", "href": "https://mastra.ai", "icon": "lobe:Mastra" },
+        { "id": "vertex", "name": "Google Vertex AI", "href": "https://cloud.google.com/vertex-ai", "icon": "lobe:VertexAI" }
       ]
     },
     {
@@ -112,12 +58,21 @@
       "label": "Observability",
       "icon": "",
       "tools": [
-        {
-          "id": "langsmith",
-          "name": "LangSmith",
-          "href": "https://smith.langchain.com",
-          "icon": "https://www.google.com/s2/favicons?domain=smith.langchain.com&sz=128"
-        }
+        { "id": "langsmith", "name": "LangSmith", "href": "https://smith.langchain.com", "icon": "lobe:LangSmith" },
+        { "id": "langfuse", "name": "Langfuse", "href": "https://langfuse.com", "icon": "lobe:Langfuse" },
+        { "id": "arize", "name": "Arize Phoenix", "href": "https://phoenix.arize.com", "icon": "https://www.google.com/s2/favicons?domain=phoenix.arize.com&sz=128" },
+        { "id": "braintrust", "name": "Braintrust", "href": "https://braintrust.dev", "icon": "https://www.google.com/s2/favicons?domain=braintrust.dev&sz=128" }
+      ]
+    },
+    {
+      "id": "no-code",
+      "label": "No Code",
+      "icon": "",
+      "tools": [
+        { "id": "dify", "name": "Dify", "href": "https://dify.ai", "icon": "lobe:Dify" },
+        { "id": "n8n", "name": "n8n", "href": "https://n8n.io", "icon": "lobe:N8n" },
+        { "id": "flowise", "name": "Flowise", "href": "https://flowiseai.com", "icon": "https://www.google.com/s2/favicons?domain=flowiseai.com&sz=128" },
+        { "id": "langflow", "name": "Langflow", "href": "https://langflow.org", "icon": "https://www.google.com/s2/favicons?domain=langflow.org&sz=128" }
       ]
     },
     {
@@ -125,30 +80,21 @@
       "label": "Local Development",
       "icon": "",
       "tools": [
-        {
-          "id": "ollama",
-          "name": "Ollama",
-          "href": "https://ollama.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=ollama.ai&sz=128"
-        },
-        {
-          "id": "llama-cpp",
-          "name": "llama.cpp",
-          "href": "https://github.com/ggerganov/llama.cpp",
-          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
-        },
-        {
-          "id": "lm-studio",
-          "name": "LM Studio",
-          "href": "https://lmstudio.ai",
-          "icon": "https://www.google.com/s2/favicons?domain=lmstudio.ai&sz=128"
-        },
-        {
-          "id": "llm-anything",
-          "name": "LLM Anything",
-          "href": "https://github.com/jbmcbrogden/llm-anything",
-          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
-        }
+        { "id": "ollama", "name": "Ollama", "href": "https://ollama.ai", "icon": "lobe:Ollama" },
+        { "id": "lm-studio", "name": "LM Studio", "href": "https://lmstudio.ai", "icon": "lobe:LmStudio" },
+        { "id": "openwebui", "name": "OpenWebUI", "href": "https://openwebui.com", "icon": "lobe:OpenWebUI" },
+        { "id": "vllm", "name": "vLLM", "href": "https://vllm.ai", "icon": "lobe:Vllm" }
+      ]
+    },
+    {
+      "id": "model-hub",
+      "label": "Model Hub",
+      "icon": "",
+      "tools": [
+        { "id": "huggingface", "name": "Hugging Face", "href": "https://huggingface.co", "icon": "lobe:HuggingFace" },
+        { "id": "civitai", "name": "Civitai", "href": "https://civitai.com", "icon": "lobe:Civitai" },
+        { "id": "modelscope", "name": "ModelScope", "href": "https://modelscope.cn", "icon": "lobe:ModelScope" },
+        { "id": "replicate", "name": "Replicate", "href": "https://replicate.com", "icon": "lobe:Replicate" }
       ]
     }
   ]

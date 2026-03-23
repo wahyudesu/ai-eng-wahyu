@@ -7,6 +7,7 @@
       "title": "Forward Deployed Software Engineer",
       "company": "Palantir",
       "type": "Full-time",
+      "location": "United States",
       "href": "https://jobs.lever.co/palantir/b4aa51a2-bc43-4d67-bf55-12db7feefb3a",
       "icon": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128"
     },
@@ -15,6 +16,7 @@
       "title": "AI Applied Engineer",
       "company": "Garena",
       "type": "Full-time",
+      "location": "Singapore",
       "href": "https://id.indeed.com/viewjob?jk=b9b3d5540b06dce7&from=shareddesktop_copy",
       "icon": "https://www.google.com/s2/favicons?domain=garena.com&sz=128"
     },
@@ -23,6 +25,7 @@
       "title": "Azure AI Engineer",
       "company": "Microsoft",
       "type": "Full-time",
+      "location": "Remote",
       "href": "https://id.indeed.com/viewjob?jk=f93ba643e1ebd06a&from=shareddesktop_copy",
       "icon": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
     },
@@ -31,6 +34,7 @@
       "title": "Data Scientist Intern",
       "company": "Tinder",
       "type": "Internship",
+      "location": "United States",
       "href": "https://www.linkedin.com/jobs/view/data-scientist-intern-at-tinder-4323761210",
       "icon": "https://www.google.com/s2/favicons?domain=tinder.com&sz=128"
     }
