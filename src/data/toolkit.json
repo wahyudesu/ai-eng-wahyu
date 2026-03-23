@@ -1,0 +1,155 @@
+{
+  "title": "AI Engineering Toolkit",
+  "description": "Essential tools, frameworks, and platforms for building AI applications",
+  "categories": [
+    {
+      "id": "llm-gateway",
+      "label": "LLM Gateway / Provider",
+      "icon": "🔌",
+      "tools": [
+        {
+          "id": "openai",
+          "name": "OpenAI",
+          "href": "https://openai.com",
+          "icon": "https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+        },
+        {
+          "id": "anthropic",
+          "name": "Anthropic",
+          "href": "https://anthropic.com",
+          "icon": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+        },
+        {
+          "id": "openrouter",
+          "name": "OpenRouter",
+          "href": "https://openrouter.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=openrouter.ai&sz=128"
+        },
+        {
+          "id": "sumopod",
+          "name": "Sumopod",
+          "href": "https://sumopod.com",
+          "icon": "https://www.google.com/s2/favicons?domain=sumopod.com&sz=128"
+        }
+      ]
+    },
+    {
+      "id": "vector-db",
+      "label": "Vector Database",
+      "icon": "🗄️",
+      "tools": []
+    },
+    {
+      "id": "agent-framework",
+      "label": "Agent Framework",
+      "icon": "🤖",
+      "tools": [
+        {
+          "id": "langchain",
+          "name": "LangChain",
+          "href": "https://langchain.com",
+          "icon": "https://www.google.com/s2/favicons?domain=langchain.com&sz=128"
+        },
+        {
+          "id": "haystack",
+          "name": "Haystack",
+          "href": "https://haystack.deepset.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=haystack.deepset.ai&sz=128"
+        },
+        {
+          "id": "vercel-ai-sdk",
+          "name": "Vercel AI SDK",
+          "href": "https://sdk.vercel.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=sdk.vercel.ai&sz=128"
+        },
+        {
+          "id": "langgraph",
+          "name": "LangGraph",
+          "href": "https://langchain-ai.github.io/langgraph",
+          "icon": "https://www.google.com/s2/favicons?domain=langchain-ai.github.io&sz=128"
+        },
+        {
+          "id": "mastra",
+          "name": "Mastra",
+          "href": "https://mastra.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=mastra.ai&sz=128"
+        },
+        {
+          "id": "google-ada",
+          "name": "Google ADA",
+          "href": "https://ai.google.dev",
+          "icon": "https://www.google.com/s2/favicons?domain=ai.google.dev&sz=128"
+        }
+      ]
+    },
+    {
+      "id": "no-code",
+      "label": "No Code",
+      "icon": "🎨",
+      "tools": [
+        {
+          "id": "n8n",
+          "name": "n8n",
+          "href": "https://n8n.io",
+          "icon": "https://www.google.com/s2/favicons?domain=n8n.io&sz=128"
+        },
+        {
+          "id": "dify",
+          "name": "Dify",
+          "href": "https://dify.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=dify.ai&sz=128"
+        },
+        {
+          "id": "langflow",
+          "name": "Langflow",
+          "href": "https://langflow.org",
+          "icon": "https://www.google.com/s2/favicons?domain=langflow.org&sz=128"
+        }
+      ]
+    },
+    {
+      "id": "observability",
+      "label": "Observability",
+      "icon": "📊",
+      "tools": [
+        {
+          "id": "langsmith",
+          "name": "LangSmith",
+          "href": "https://smith.langchain.com",
+          "icon": "https://www.google.com/s2/favicons?domain=smith.langchain.com&sz=128"
+        }
+      ]
+    },
+    {
+      "id": "local-dev",
+      "label": "Local Development",
+      "icon": "💻",
+      "tools": [
+        {
+          "id": "ollama",
+          "name": "Ollama",
+          "href": "https://ollama.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=ollama.ai&sz=128"
+        },
+        {
+          "id": "llama-cpp",
+          "name": "llama.cpp",
+          "href": "https://github.com/ggerganov/llama.cpp",
+          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+        },
+        {
+          "id": "lm-studio",
+          "name": "LM Studio",
+          "href": "https://lmstudio.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=lmstudio.ai&sz=128"
+        },
+        {
+          "id": "llm-anything",
+          "name": "LLM Anything",
+          "href": "https://github.com/jbmcbrogden/llm-anything",
+          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+        }
+      ]
+    }
+  ]
+}

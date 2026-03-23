@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 import { Navigation } from "@/components/navigation";
-import { AsciiAi } from "@/components/ascii-ai";
-import { JobCardList } from "@/components/ui/job-card-list";
+import { ToolkitGrid } from "@/components/ui/toolkit-grid";
 import { parseReadme } from "@/lib/readme-parser";
+import { AsciiAi } from "@/components/ascii-ai";
 
 export const metadata: Metadata = {
-  title: "Jobs",
+  title: "Toolkit",
   description:
-    "Explore curated AI engineering job opportunities at top companies like OpenAI, Anthropic, DeepMind, and more. Remote and on-site positions available.",
+    "Essential AI engineering tools, frameworks, and platforms for building intelligent applications. Curated list of developer resources.",
   alternates: {
-    canonical: "https://aieng.wahyuikbal.com/jobs",
+    canonical: "https://aieng.wahyuikbal.com/toolkit",
   },
   openGraph: {
-    title: "AI Engineering - Jobs",
-    url: "https://aieng.wahyuikbal.com/jobs",
+    title: "AI Engineering - Toolkit",
+    url: "https://aieng.wahyuikbal.com/toolkit",
   },
 };
 
-export default function JobsPage() {
-  const { jobsData } = parseReadme();
+export default function ToolsPage() {
+  const { toolkitData } = parseReadme();
 
   return (
     <div className="min-h-screen font-sans selection:bg-foreground/10 dark:selection:bg-foreground/20">
@@ -38,9 +38,8 @@ export default function JobsPage() {
             </p>
           </header>
 
-
           <section>
-            <JobCardList jobs={jobsData.jobs} />
+            <ToolkitGrid categories={toolkitData.categories} />
           </section>
         </main>
       </div>

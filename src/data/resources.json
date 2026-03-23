@@ -62,7 +62,7 @@
       "description": "Guide to mastering Large Language Models from concept to deployment",
       "category": "Books",
       "href": "https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/",
-      "icon": "https://www.google.com/s2/favicons?domain=www.packtpub.com&sz=128"
+      "icon": "https://www.google.com/s2/favicons?domain=www.oreilly.com&sz=128"
     },
     {
       "id": "sebastian-raschka-magazine",
@@ -86,7 +86,7 @@
       "description": "Principles for building robust AI agents",
       "category": "Videos",
       "href": "https://youtu.be/8kMaTybvDUw?si=Z2tUQMsqpdAlXBhN",
-      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
+      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
     },
     {
       "id": "building-gpt-from-scratch",
@@ -94,7 +94,7 @@
       "description": "Step-by-step guide to building GPT",
       "category": "Videos",
       "href": "https://youtu.be/kCc8FmEb1nY?si=F7Gpe1aHer7MHr7J",
-      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
+      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
     },
     {
       "id": "dont-build-agents-build-skills",
@@ -102,7 +102,7 @@
       "description": "Barry Zhang & Mahesh Murag from Anthropic on skill-based AI architecture",
       "category": "Videos",
       "href": "https://youtu.be/CEvIs9y1uog?si=CBFzZ2CGl_FAAQcR",
-      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
+      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
     },
     {
       "id": "finetune-llm-claude-code",
@@ -110,7 +110,7 @@
       "description": "Guide to fine-tuning LLMs using Claude",
       "category": "Videos",
       "href": "https://youtu.be/HGPTUc7tEq4?si=dnM1qmY6aSyDQHGo",
-      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
+      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
     },
     {
       "id": "python-essentials-ai-agents",
@@ -118,7 +118,7 @@
       "description": "Python fundamentals for building AI agents",
       "category": "Videos",
       "href": "https://youtu.be/UsfpzxZNsPo?si=EkWm-jyx3JhDBUn8",
-      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=128"
+      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
     },
     {
       "id": "ai-engineering-hub",

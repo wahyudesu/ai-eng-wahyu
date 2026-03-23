@@ -1,6 +1,8 @@
 // Read directly from JSON files - now the source of truth
 import personData from "@/data/person.json";
 import resourcesData from "@/data/resources.json";
+import jobsData from "@/data/jobs.json";
+import toolkitData from "@/data/toolkit.json";
 
 type PersonWithWebsite = {
   id: string;
@@ -35,5 +37,7 @@ export function parseReadme() {
       persons,
     },
     resourcesData: resourcesData, // Direct from resources.json
+    jobsData: jobsData, // Direct from jobs.json
+    toolkitData: toolkitData, // Direct from toolkit.json
   };
 }

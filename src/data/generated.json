@@ -1,0 +1,277 @@
+{
+  "personData": {
+    "title": "AI Engineers to Follow",
+    "description": "Follow these amazing AI engineers on social media",
+    "persons": [
+      {
+        "id": "muhamadarielakilie",
+        "name": "Muhamad Ariel Akilie",
+        "role": "AI Engineering Leader at Kata AI",
+        "icon": "🔗",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/arielakilie/"
+        }
+      },
+      {
+        "id": "alfandindarahmawan",
+        "name": "Alfan Dinda Rahmawan",
+        "role": "Senior Data Scientist / AI Engineer at Glair",
+        "icon": "🔗",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/alfandindarahmawan/"
+        }
+      },
+      {
+        "id": "karpathy",
+        "name": "Andrej Karpathy",
+        "role": "Ex-Director of AI at Tesla, Ex-Founding Member of OpenAI",
+        "icon": "🔗",
+        "social": {
+          "twitter": "https://x.com/karpathy"
+        }
+      },
+      {
+        "id": "AndrewYNg",
+        "name": "Andrew Ng",
+        "role": "Co-Founder of Coursera, Founder of DeepLearning.AI",
+        "icon": "🔗",
+        "social": {
+          "twitter": "https://x.com/AndrewYNg"
+        }
+      },
+      {
+        "id": "borischerny",
+        "name": "Boris Cherny",
+        "role": "Head of Claude Code at Anthropic",
+        "icon": "🔗",
+        "social": {
+          "twitter": "https://x.com/bcherny"
+        }
+      },
+      {
+        "id": "andrewzhai",
+        "name": "Andrew Zhai",
+        "role": "ML Engineer",
+        "icon": "🔗",
+        "social": {
+          "twitter": "https://x.com/ZhaiAndrew"
+        }
+      }
+    ]
+  },
+  "resourcesData": {
+    "resources": [
+      {
+        "id": "attention-is-all-you-need",
+        "title": "Attention Is All You Need",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://arxiv.org/abs/1706.03762",
+        "icon": "🔗"
+      },
+      {
+        "id": "bert-pre-training-of-deep-bidirectional-transformers",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://arxiv.org/abs/1810.04805",
+        "icon": "🔗"
+      },
+      {
+        "id": "denoising-diffusion-probabilistic-models",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://arxiv.org/abs/2006.11239",
+        "icon": "🔗"
+      },
+      {
+        "id": "neural-scaling-laws-for-large-language-models",
+        "title": "Neural Scaling Laws for Large Language Models",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://arxiv.org/abs/2001.08361",
+        "icon": "🔗"
+      },
+      {
+        "id": "ai-engineering",
+        "title": "AI Engineering",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://www.oreilly.com/library/view/ai-engineering/9781098166302/",
+        "icon": "🔗"
+      },
+      {
+        "id": "building-llms-for-production",
+        "title": "Building LLMs for Production",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://www.manning.com/books/building-llms-for-production",
+        "icon": "🔗"
+      },
+      {
+        "id": "designing-machine-learning-systems",
+        "title": "Designing Machine Learning Systems",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://www.amazon.com/dp/1098107969",
+        "icon": "🔗"
+      },
+      {
+        "id": "llm-engineer-s-handbook",
+        "title": "LLM Engineer's Handbook",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://www.packtpub.com/product/llm-engineers-handbook/9781835089273",
+        "icon": "🔗"
+      },
+      {
+        "id": "llms-in-production",
+        "title": "LLMs in Production",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://www.manning.com/books/llms-in-production",
+        "icon": "🔗"
+      },
+      {
+        "id": "prompt-engineering-for-llms",
+        "title": "Prompt Engineering for LLMs",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://www.manning.com/books/prompt-engineering-for-llms",
+        "icon": "🔗"
+      },
+      {
+        "id": "building-llm-applications-for-production",
+        "title": "Building LLM Applications for Production",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://arxiv.org/abs/2310.20088",
+        "icon": "🔗"
+      },
+      {
+        "id": "sebastian-raschka-s-magazine",
+        "title": "Sebastian Raschka's Magazine",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://magazine.sebastianraschka.com",
+        "icon": "🔗"
+      },
+      {
+        "id": "towards-data-science",
+        "title": "Towards Data Science",
+        "description": "AI Engineering Resource",
+        "category": "Articles",
+        "href": "https://towardsdatascience.com",
+        "icon": "🔗"
+      },
+      {
+        "id": "12-factor-agent",
+        "title": "12 Factor Agent",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "https://youtu.be/8kMaTybvDUw?si=Z2tUQMsqpdAlXBhN",
+        "icon": "🔗"
+      },
+      {
+        "id": "building-gpt-from-scratch",
+        "title": "Building GPT from Scratch",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "https://youtu.be/kCc8FmEb1nY?si=F7Gpe1aHer7MHr7J",
+        "icon": "🔗"
+      },
+      {
+        "id": "don-t-build-agents-build-skills-instead",
+        "title": "Don't Build Agents, Build Skills Instead",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "https://youtu.be/CEvIs9y1uog?si=CBFzZ2CGl_FAAQcR",
+        "icon": "🔗"
+      },
+      {
+        "id": "fast-ai-practical-deep-learning",
+        "title": "Fast.ai Practical Deep Learning",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "https://www.fast.ai/",
+        "icon": "🔗"
+      },
+      {
+        "id": "fine-tune-an-open-source-llm-with-claude-code-codex",
+        "title": "Fine-Tune an Open Source LLM with Claude Code/Codex",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "https://youtu.be/HGPTUc7tEq4?si=dnM1qmY6aSyDQHGo",
+        "icon": "🔗"
+      },
+      {
+        "id": "python-essentials-for-ai-agents",
+        "title": "Python Essentials for AI Agents",
+        "description": "AI Engineering Resource",
+        "category": "Videos",
+        "href": "https://youtu.be/UsfpzxZNsPo?si=EkWm-jyx3JhDBUn8",
+        "icon": "🔗"
+      },
+      {
+        "id": "ai-engineering-hub",
+        "title": "AI Engineering Hub",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/patchy631/ai-engineering-hub",
+        "icon": "🔗"
+      },
+      {
+        "id": "ai-engineering-toolkit",
+        "title": "AI Engineering Toolkit",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/Sumanth077/ai-engineering-toolkit",
+        "icon": "🔗"
+      },
+      {
+        "id": "llms-from-scratch",
+        "title": "LLMs from Scratch",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/rasbt/LLMs-from-scratch",
+        "icon": "🔗"
+      },
+      {
+        "id": "system-prompts-and-models-of-ai-tools",
+        "title": "System Prompts and Models of AI Tools",
+        "description": "AI Engineering Resource",
+        "category": "Code",
+        "href": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+        "icon": "🔗"
+      }
+    ],
+    "categories": [
+      {
+        "id": "articles",
+        "label": "Articles",
+        "icon": "FileText"
+      },
+      {
+        "id": "advice",
+        "label": "Advice",
+        "icon": "MessageCircle"
+      },
+      {
+        "id": "inspiration",
+        "label": "Inspiration",
+        "icon": "Sparkles"
+      },
+      {
+        "id": "videos",
+        "label": "Videos",
+        "icon": "Video"
+      },
+      {
+        "id": "code",
+        "label": "Code",
+        "icon": "Code"
+      }
+    ]
+  }
+}

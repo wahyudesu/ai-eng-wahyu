@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import type * as React from "react";
 import { useState } from "react";
 import type { IconType } from "react-icons";
-import { FaCode } from "react-icons/fa6";
+import { FaBriefcase, FaCode, FaDatabase, FaGraduationCap, FaMicrochip } from "react-icons/fa6";
 import { HiSparkles } from "react-icons/hi";
 import { HiDocumentText } from "react-icons/hi2";
 import { PiBookOpenDuotone, PiScrollDuotone, PiVideoDuotone } from "react-icons/pi";
@@ -18,6 +18,10 @@ const iconMap: Record<string, IconType> = {
   MessageCircle: TbMessageCircle,
   Book: PiBookOpenDuotone,
   Scroll: PiScrollDuotone,
+  Briefcase: FaBriefcase,
+  Cpu: FaMicrochip,
+  Database: FaDatabase,
+  GraduationCap: FaGraduationCap,
 };
 
 export type FilterOption = {

@@ -10,7 +10,7 @@ const navItems = [
   { href: "/", label: "home" },
   { href: "/jobs", label: "jobs" },
   { href: "/courses", label: "courses" },
-  { href: "/tools", label: "tools" },
+  { href: "/toolkit", label: "toolkit" },
   { href: "/ai", label: "ai" },
 ];
 

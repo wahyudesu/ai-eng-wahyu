@@ -1,0 +1,38 @@
+{
+  "title": "AI/ML Job Opportunities",
+  "description": "Curated AI, ML, and Data Science job openings from top companies",
+  "jobs": [
+    {
+      "id": "forward-deployed-software-engineer-palantir",
+      "title": "Forward Deployed Software Engineer",
+      "company": "Palantir",
+      "type": "Full-time",
+      "href": "https://jobs.lever.co/palantir/b4aa51a2-bc43-4d67-bf55-12db7feefb3a",
+      "icon": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128"
+    },
+    {
+      "id": "ai-applied-engineer-garena",
+      "title": "AI Applied Engineer",
+      "company": "Garena",
+      "type": "Full-time",
+      "href": "https://id.indeed.com/viewjob?jk=b9b3d5540b06dce7&from=shareddesktop_copy",
+      "icon": "https://www.google.com/s2/favicons?domain=garena.com&sz=128"
+    },
+    {
+      "id": "azure-ai-engineer",
+      "title": "Azure AI Engineer",
+      "company": "Microsoft",
+      "type": "Full-time",
+      "href": "https://id.indeed.com/viewjob?jk=f93ba643e1ebd06a&from=shareddesktop_copy",
+      "icon": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
+    },
+    {
+      "id": "data-scientist-intern-tinder",
+      "title": "Data Scientist Intern",
+      "company": "Tinder",
+      "type": "Internship",
+      "href": "https://www.linkedin.com/jobs/view/data-scientist-intern-at-tinder-4323761210",
+      "icon": "https://www.google.com/s2/favicons?domain=tinder.com&sz=128"
+    }
+  ]
+}

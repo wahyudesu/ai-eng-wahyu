@@ -19,9 +19,7 @@ async function updatePersonFavicons() {
   for (const person of data.persons) {
     if (person.website) {
       person.icon = getFaviconUrl(person.website);
-      console.log(
-        `✓ Person: ${person.name} → ${person.icon.substring(0, 60)}...`,
-      );
+      console.log(`✓ Person: ${person.name}`);
     }
   }
 
@@ -37,9 +35,7 @@ async function updateResourceFavicons() {
   for (const resource of data.resources) {
     if (resource.href && resource.href !== "#") {
       resource.icon = getFaviconUrl(resource.href);
-      console.log(
-        `✓ Resource: ${resource.title} → ${resource.icon.substring(0, 60)}...`,
-      );
+      console.log(`✓ Resource: ${resource.title}`);
     }
   }
 
@@ -49,10 +45,33 @@ async function updateResourceFavicons() {
   );
 }
 
+// Update toolkit favicons
+async function updateToolkitFavicons() {
+  const toolkitPath = join(process.cwd(), "src/data/toolkit.json");
+  const data = JSON.parse(readFileSync(toolkitPath, "utf-8"));
+
+  for (const category of data.categories) {
+    for (const tool of category.tools) {
+      if (tool.href && tool.href !== "#") {
+        tool.icon = getFaviconUrl(tool.href);
+        console.log(`✓ Tool: ${tool.name}`);
+      }
+    }
+  }
+
+  writeFileSync(toolkitPath, JSON.stringify(data, null, 2));
+  console.log(
+    "✅ Updated src/data/toolkit.json with favicons\n",
+  );
+}
+
 async function main() {
   console.log("🔄 Updating favicons...\n");
-  await updatePersonFavicons();
-  await updateResourceFavicons();
+  await Promise.all([
+    updatePersonFavicons(),
+    updateResourceFavicons(),
+    updateToolkitFavicons(),
+  ]);
   console.log("✨ All favicons updated!");
 }
 

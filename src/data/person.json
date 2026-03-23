@@ -25,7 +25,7 @@
       "country": "🇺🇸",
       "website": "https://karpathy.ai/",
       "sosmed": "https://x.com/karpathy",
-      "icon": "https://karpathy.ai/assets/me_new.jpg"
+      "icon": "https://www.google.com/s2/favicons?domain=karpathy.ai&sz=128"
     },
     {
       "id": "andrew-ng",
@@ -34,7 +34,7 @@
       "country": "🇺🇸",
       "website": "https://www.andrewng.org/",
       "sosmed": "https://x.com/AndrewYNg",
-      "icon": "https://pbs.twimg.com/profile_images/733174243714682880/oyG30NEH_400x400.jpg"
+      "icon": "https://www.google.com/s2/favicons?domain=www.andrewng.org&sz=128"
     },
     {
       "id": "boris-cherny",
@@ -43,7 +43,7 @@
       "country": "🇺🇸",
       "website": "https://borischerny.com",
       "sosmed": "https://x.com/bcherny",
-      "icon": "https://pbs.twimg.com/profile_images/1902044548936953856/J2jeik0t_400x400.jpg"
+      "icon": "https://www.google.com/s2/favicons?domain=borischerny.com&sz=128"
     },
     {
       "id": "andrew-zhai",
