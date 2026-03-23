@@ -65,12 +65,31 @@ async function updateToolkitFavicons() {
   );
 }
 
+// Update jobs favicons
+async function updateJobsFavicons() {
+  const jobsPath = join(process.cwd(), "src/data/jobs.json");
+  const data = JSON.parse(readFileSync(jobsPath, "utf-8"));
+
+  for (const job of data.jobs) {
+    if (job.href && job.href !== "#") {
+      job.icon = getFaviconUrl(job.href);
+      console.log(`✓ Job: ${job.title} at ${job.company}`);
+    }
+  }
+
+  writeFileSync(jobsPath, JSON.stringify(data, null, 2));
+  console.log(
+    "✅ Updated src/data/jobs.json with favicons\n",
+  );
+}
+
 async function main() {
   console.log("🔄 Updating favicons...\n");
   await Promise.all([
     updatePersonFavicons(),
     updateResourceFavicons(),
     updateToolkitFavicons(),
+    updateJobsFavicons(),
   ]);
   console.log("✨ All favicons updated!");
 }
