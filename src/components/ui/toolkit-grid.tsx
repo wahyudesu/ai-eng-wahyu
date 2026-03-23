@@ -31,14 +31,18 @@ export function ToolkitGrid({ categories }: ToolkitGridProps) {
         <section key={category.id}>
           <div className="flex items-center gap-2 mb-4">
             <span className="text-xl">{category.icon}</span>
-            <h3 className="text-sm font-medium text-foreground">{category.label}</h3>
+            <h3 className="text-sm font-medium text-foreground">
+              {category.label}
+            </h3>
             <span className="text-muted-foreground text-sm">
               ({category.tools.length})
             </span>
           </div>
 
           {category.tools.length === 0 ? (
-            <p className="text-sm text-muted-foreground italic">Coming soon...</p>
+            <p className="text-sm text-muted-foreground italic">
+              Coming soon...
+            </p>
           ) : (
             <div className="grid grid-cols-10 sm:grid-cols-12 md:grid-cols-14 gap-1">
               {category.tools.map((tool) => (
@@ -64,8 +68,8 @@ export function ToolkitGrid({ categories }: ToolkitGridProps) {
                       <Image
                         src={tool.icon}
                         alt={tool.name}
-                        width={48}
-                        height={48}
+                        width={12}
+                        height={12}
                         className="w-full h-full object-cover"
                       />
                     ) : (
