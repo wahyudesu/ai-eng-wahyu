@@ -32,11 +32,13 @@ export function Navigation() {
             >
               {item.label}
             </Link>
-            {item.badge && pathname !== item.href && (
-              <span className="text-[9px] leading-none px-1 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
-                {item.badge}
-              </span>
-            )}
+            <span className={`text-[9px] leading-none px-1 py-0.5 rounded-full font-medium ${
+              item.badge && pathname !== item.href
+                ? "bg-primary/10 text-primary"
+                : "opacity-0"
+            }`}>
+              {item.badge || "new"}
+            </span>
           </li>
         ))}
       </ul>

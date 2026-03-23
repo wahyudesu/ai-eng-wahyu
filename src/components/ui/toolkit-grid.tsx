@@ -44,7 +44,7 @@ export function ToolkitGrid({ categories }: ToolkitGridProps) {
               Coming soon...
             </p>
           ) : (
-            <div className="grid grid-cols-10 sm:grid-cols-12 md:grid-cols-14 gap-1">
+            <div className="grid grid-cols-[repeat(16,minmax(0,1fr))] sm:grid-cols-[repeat(18,minmax(0,1fr))] md:grid-cols-[repeat(20,minmax(0,1fr))] gap-0.5">
               {category.tools.map((tool) => (
                 <motion.a
                   key={tool.id}
@@ -68,12 +68,12 @@ export function ToolkitGrid({ categories }: ToolkitGridProps) {
                       <Image
                         src={tool.icon}
                         alt={tool.name}
-                        width={12}
-                        height={12}
+                        width={16}
+                        height={16}
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-lg bg-neutral-100 dark:bg-neutral-800">
+                      <div className="w-full h-full flex items-center justify-center text-xs bg-neutral-100 dark:bg-neutral-800">
                         {tool.icon}
                       </div>
                     )}
