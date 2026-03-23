@@ -1,7 +1,79 @@
 "use client";
 
 import Image from "next/image";
-import { ModelIcon } from "@lobehub/icons";
+import { memo, useState, useMemo } from "react";
+
+// Map icon names to their direct component keys in @lobehub/icons
+const DIRECT_ICON_MAP: Record<string, string> = {
+  "OpenAI": "OpenAI",
+  "Anthropic": "Anthropic",
+  "Gemini": "Gemini",
+  "Groq": "Groq",
+  "OpenRouter": "OpenRouter",
+  "Together": "Together",
+  "Fireworks": "Fireworks",
+  "Cohere": "Cohere",
+  "Mistral": "Mistral",
+  "Perplexity": "Perplexity",
+  "XAI": "XAI",
+  "DeepSeek": "DeepSeek",
+  "Bedrock": "Bedrock",
+  "AzureAI": "AzureAI",
+  "LangChain": "LangChain",
+  "LangGraph": "LangGraph",
+  "Vercel": "Vercel",
+  "LlamaIndex": "LlamaIndex",
+  "CrewAI": "CrewAI",
+  "Dify": "Dify",
+  "Mastra": "Mastra",
+  "VertexAI": "VertexAI",
+  "LangSmith": "LangSmith",
+  "Langfuse": "Langfuse",
+  "N8n": "N8n",
+  "Ollama": "Ollama",
+  "LmStudio": "LmStudio",
+  "OpenWebUI": "OpenWebUI",
+  "Vllm": "Vllm",
+  "HuggingFace": "HuggingFace",
+  "Civitai": "Civitai",
+  "ModelScope": "ModelScope",
+  "Replicate": "Replicate",
+  "Supabase": "Supabase",
+};
+
+// Direct icon component renderer
+function LobeDirectIcon({
+  iconName,
+  size,
+  className,
+}: {
+  iconName: string;
+  size: number;
+  className?: string;
+}) {
+  const [error, setError] = useState(false);
+
+  if (error) {
+    return null;
+  }
+
+  try {
+    // @ts-ignore - dynamic import
+    const icons = require("@lobehub/icons");
+    const componentKey = DIRECT_ICON_MAP[iconName];
+    if (!componentKey || !icons[componentKey]) {
+      setError(true);
+      return null;
+    }
+    const IconComponent = icons[componentKey];
+    // For brand icons, use the Avatar variant (e.g., N8n.Avatar)
+    const Component = IconComponent.Avatar || IconComponent.Color || IconComponent;
+    return <Component size={size} className={className} />;
+  } catch {
+    setError(true);
+    return null;
+  }
+}
 
 export type Tool = {
   id: string;
@@ -23,10 +95,10 @@ type ToolkitGridProps = {
 
 function ToolIcon({ tool }: { tool: Tool }) {
   if (tool.icon.startsWith("lobe:")) {
-    const modelName = tool.icon.slice(5);
+    const iconName = tool.icon.slice(5); // e.g., "LangChain"
     return (
       <div className="w-5 h-5 flex items-center justify-center">
-        <ModelIcon model={modelName} size={16} type="color" />
+        <LobeDirectIcon iconName={iconName} size={16} />
       </div>
     );
   }

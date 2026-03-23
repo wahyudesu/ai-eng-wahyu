@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import Image from "next/image";
+import { IconRenderer } from "./icon-renderer";
 import { useState } from "react";
 
 export type Job = {
@@ -44,21 +44,8 @@ export function JobCardList({ jobs }: JobCardListProps) {
         >
           <div className="flex items-center gap-4 p-4">
             {/* Icon */}
-            <div className="relative shrink-0">
-              {job.icon.startsWith("http") ? (
-                <Image
-                  src={job.icon}
-                  alt={job.company}
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 rounded-lg object-cover"
-                  quality={50}
-                />
-              ) : (
-                <div className="w-12 h-12 rounded-lg bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-2xl">
-                  {job.icon}
-                </div>
-              )}
+            <div className="relative shrink-0 w-12 h-12">
+              <IconRenderer icon={job.icon} size={48} className="w-12 h-12 rounded-lg" />
             </div>
 
             {/* Content */}

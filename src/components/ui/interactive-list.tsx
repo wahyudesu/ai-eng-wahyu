@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { HoverPeek } from "./link-preview";
-import Image from "next/image";
+import { IconRenderer } from "./icon-renderer";
 
 export type ListItemProps = {
   id: string;
@@ -35,11 +35,7 @@ export function InteractiveList({ items }: InteractiveListProps) {
         const isHovered = hoveredId === item.id;
         const content = (
           <>
-            {item.icon.startsWith?.("http") ? (
-              <Image src={item.icon} alt="" width={24} height={24} className="w-6 h-6 shrink-0 rounded-full object-cover" quality={50} aria-hidden="true" />
-            ) : (
-              <span className="text-base shrink-0">{item.icon}</span>
-            )}
+            <IconRenderer icon={item.icon} size={24} className="w-6 h-6 shrink-0" />
             <span className="flex-1 min-w-0 flex items-center">
               <span className="text-foreground font-medium relative after:absolute after:bg-primary after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 group-hover:after:origin-bottom-left group-hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 truncate">
                 {item.title}
