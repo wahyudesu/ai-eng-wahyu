@@ -30,7 +30,7 @@ export default function HomePage() {
       id: p.id,
       icon: p.icon,
       title: p.name,
-      description: p.role,
+      description: p.title,
       country: p.country,
       href: sosmedUrl || undefined,
       previewUrl: websiteUrl || sosmedUrl || undefined,
