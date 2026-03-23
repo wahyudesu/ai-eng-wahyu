@@ -44,7 +44,7 @@ export function ToolkitGrid({ categories }: ToolkitGridProps) {
               Coming soon...
             </p>
           ) : (
-            <div className="grid grid-cols-[repeat(16,minmax(0,1fr))] sm:grid-cols-[repeat(18,minmax(0,1fr))] md:grid-cols-[repeat(20,minmax(0,1fr))] gap-0.5">
+            <div className="grid grid-cols-12 gap-2">
               {category.tools.map((tool) => (
                 <motion.a
                   key={tool.id}
