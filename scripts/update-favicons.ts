@@ -1,14 +1,21 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
-// Get favicon URL from domain
+// Get favicon URL from domain - using IconHorse for more reliable favicons
 function getFaviconUrl(url: string): string {
   try {
     const domain = new URL(url).hostname;
-    return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+    return `https://icon.horse/icon/${domain}`;
   } catch {
     return "🔗";
   }
+}
+
+// Check if icon is custom (not Google favicon or placeholder)
+function isCustomIcon(icon: string | undefined): boolean {
+  if (!icon) return false;
+  // Preserve custom emojis and non-Google URLs
+  return !icon.startsWith("https://www.google.com/s2/favicons") && icon !== "🔗";
 }
 
 // Update person favicons
@@ -17,7 +24,7 @@ async function updatePersonFavicons() {
   const data = JSON.parse(readFileSync(personPath, "utf-8"));
 
   for (const person of data.persons) {
-    if (person.website) {
+    if (person.website && !isCustomIcon(person.icon)) {
       person.icon = getFaviconUrl(person.website);
       console.log(`✓ Person: ${person.name}`);
     }
@@ -33,7 +40,7 @@ async function updateResourceFavicons() {
   const data = JSON.parse(readFileSync(resourcePath, "utf-8"));
 
   for (const resource of data.resources) {
-    if (resource.href && resource.href !== "#") {
+    if (resource.href && resource.href !== "#" && !isCustomIcon(resource.icon)) {
       resource.icon = getFaviconUrl(resource.href);
       console.log(`✓ Resource: ${resource.title}`);
     }
@@ -52,7 +59,7 @@ async function updateToolkitFavicons() {
 
   for (const category of data.categories) {
     for (const tool of category.tools) {
-      if (tool.href && tool.href !== "#") {
+      if (tool.href && tool.href !== "#" && !isCustomIcon(tool.icon)) {
         tool.icon = getFaviconUrl(tool.href);
         console.log(`✓ Tool: ${tool.name}`);
       }
@@ -71,7 +78,7 @@ async function updateJobsFavicons() {
   const data = JSON.parse(readFileSync(jobsPath, "utf-8"));
 
   for (const job of data.jobs) {
-    if (job.href && job.href !== "#") {
+    if (job.href && job.href !== "#" && !isCustomIcon(job.icon)) {
       job.icon = getFaviconUrl(job.href);
       console.log(`✓ Job: ${job.title} at ${job.company}`);
     }

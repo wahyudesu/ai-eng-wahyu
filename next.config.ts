@@ -49,6 +49,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "langflow.org",
       },
+      {
+        protocol: "https",
+        hostname: "icon.horse",
+      },
     ],
   },
 };

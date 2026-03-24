@@ -6,7 +6,7 @@
       "description": "The seminal paper that introduced the Transformer architecture",
       "category": "Papers",
       "href": "https://arxiv.org/abs/1706.03762",
-      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
+      "icon": "https://icon.horse/icon/arxiv.org"
     },
     {
       "id": "bert-paper",
@@ -14,7 +14,7 @@
       "description": "BERT paper on bidirectional transformer pre-training",
       "category": "Papers",
       "href": "https://arxiv.org/abs/1810.04805",
-      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
+      "icon": "https://icon.horse/icon/arxiv.org"
     },
     {
       "id": "denoising-diffusion",
@@ -22,7 +22,7 @@
       "description": "Foundation paper for diffusion models",
       "category": "Papers",
       "href": "https://arxiv.org/abs/2006.11239",
-      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
+      "icon": "https://icon.horse/icon/arxiv.org"
     },
     {
       "id": "neural-scaling-laws",
@@ -30,7 +30,7 @@
       "description": "Research on scaling laws for LLMs",
       "category": "Papers",
       "href": "https://arxiv.org/abs/2001.08361",
-      "icon": "https://www.google.com/s2/favicons?domain=arxiv.org&sz=128"
+      "icon": "https://icon.horse/icon/arxiv.org"
     },
     {
       "id": "ai-engineering-book",
@@ -38,7 +38,7 @@
       "description": "O'Reilly's comprehensive AI engineering guide",
       "category": "Books",
       "href": "https://www.oreilly.com/library/view/ai-engineering/9781098166298/",
-      "icon": "https://www.google.com/s2/favicons?domain=www.oreilly.com&sz=128"
+      "icon": "https://icon.horse/icon/www.oreilly.com"
     },
     {
       "id": "building-llms-for-production",
@@ -46,7 +46,7 @@
       "description": "Practical guide to production LLMs",
       "category": "Books",
       "href": "https://www.oreilly.com/library/view/building-llms-for/9798324731472/",
-      "icon": "https://www.google.com/s2/favicons?domain=www.oreilly.com&sz=128"
+      "icon": "https://icon.horse/icon/www.oreilly.com"
     },
     {
       "id": "designing-machine-learning-systems",
@@ -54,7 +54,7 @@
       "description": "Comprehensive guide to ML system design",
       "category": "Books",
       "href": "https://www.amazon.com/dp/1098107969",
-      "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com&sz=128"
+      "icon": "https://icon.horse/icon/www.amazon.com"
     },
     {
       "id": "llm-engineers-handbook",
@@ -62,7 +62,7 @@
       "description": "Guide to mastering Large Language Models from concept to deployment",
       "category": "Books",
       "href": "https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/",
-      "icon": "https://www.google.com/s2/favicons?domain=www.oreilly.com&sz=128"
+      "icon": "https://icon.horse/icon/www.oreilly.com"
     },
     {
       "id": "sebastian-raschka-magazine",
@@ -70,7 +70,7 @@
       "description": "Latest developments and research trends in ML and AI",
       "category": "Articles",
       "href": "https://magazine.sebastianraschka.com",
-      "icon": "https://www.google.com/s2/favicons?domain=magazine.sebastianraschka.com&sz=128"
+      "icon": "https://icon.horse/icon/magazine.sebastianraschka.com"
     },
     {
       "id": "towards-data-science",
@@ -78,7 +78,7 @@
       "description": "AI, ML & data-science insights",
       "category": "Articles",
       "href": "https://towardsdatascience.com",
-      "icon": "https://www.google.com/s2/favicons?domain=towardsdatascience.com&sz=128"
+      "icon": "https://icon.horse/icon/towardsdatascience.com"
     },
     {
       "id": "12-factor-agent",
@@ -86,7 +86,7 @@
       "description": "Principles for building robust AI agents",
       "category": "Videos",
       "href": "https://youtu.be/8kMaTybvDUw?si=Z2tUQMsqpdAlXBhN",
-      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
+      "icon": "https://icon.horse/icon/youtu.be"
     },
     {
       "id": "building-gpt-from-scratch",
@@ -94,7 +94,7 @@
       "description": "Step-by-step guide to building GPT",
       "category": "Videos",
       "href": "https://youtu.be/kCc8FmEb1nY?si=F7Gpe1aHer7MHr7J",
-      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
+      "icon": "https://icon.horse/icon/youtu.be"
     },
     {
       "id": "dont-build-agents-build-skills",
@@ -102,7 +102,7 @@
       "description": "Barry Zhang & Mahesh Murag from Anthropic on skill-based AI architecture",
       "category": "Videos",
       "href": "https://youtu.be/CEvIs9y1uog?si=CBFzZ2CGl_FAAQcR",
-      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
+      "icon": "https://icon.horse/icon/youtu.be"
     },
     {
       "id": "finetune-llm-claude-code",
@@ -110,7 +110,7 @@
       "description": "Guide to fine-tuning LLMs using Claude",
       "category": "Videos",
       "href": "https://youtu.be/HGPTUc7tEq4?si=dnM1qmY6aSyDQHGo",
-      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
+      "icon": "https://icon.horse/icon/youtu.be"
     },
     {
       "id": "python-essentials-ai-agents",
@@ -118,7 +118,7 @@
       "description": "Python fundamentals for building AI agents",
       "category": "Videos",
       "href": "https://youtu.be/UsfpzxZNsPo?si=EkWm-jyx3JhDBUn8",
-      "icon": "https://www.google.com/s2/favicons?domain=youtu.be&sz=128"
+      "icon": "https://icon.horse/icon/youtu.be"
     },
     {
       "id": "ai-engineering-hub",
@@ -126,7 +126,7 @@
       "description": "Curated AI engineering resources and best practices",
       "category": "Code",
       "href": "https://github.com/patchy631/ai-engineering-hub",
-      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+      "icon": "https://icon.horse/icon/github.com"
     },
     {
       "id": "ai-engineering-toolkit",
@@ -134,7 +134,7 @@
       "description": "Comprehensive toolkit for AI engineering",
       "category": "Code",
       "href": "https://github.com/Sumanth077/ai-engineering-toolkit",
-      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+      "icon": "https://icon.horse/icon/github.com"
     },
     {
       "id": "llms-from-scratch",
@@ -142,7 +142,7 @@
       "description": "Interactive deep learning: building LLMs from scratch",
       "category": "Code",
       "href": "https://github.com/rasbt/LLMs-from-scratch",
-      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+      "icon": "https://icon.horse/icon/github.com"
     },
     {
       "id": "system-prompts-and-models",
@@ -150,7 +150,7 @@
       "description": "Collection of system prompts and AI tool models",
       "category": "Code",
       "href": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+      "icon": "https://icon.horse/icon/github.com"
     }
   ],
   "categories": [
